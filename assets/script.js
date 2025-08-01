@@ -1,110 +1,96 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const allSections = document.querySelectorAll('main > section');
+    const detailPage = document.getElementById('service-detail-page');
+    const detailContent = document.getElementById('service-detail-content');
+    const loadingScreen = document.getElementById('loading-screen');
+    const mainPageContent = document.getElementById('main-content');
+    const cardLinks = document.querySelectorAll('.card-link');
+    const backButton = document.getElementById('back-to-services');
     
-    // --- Reusable Navbar & Footer Loader ---
-    const navbarHTML = `
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="Grace Arabia Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">Our Divisions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#why-us">Why Us</a></li>
-                </ul>
-            </div>
-        </div>
-    `;
-
-    const footerHTML = `
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="assets/images/logo.png" alt="Grace Arabia Logo" class="footer-logo">
-                    <p class="text-secondary">Your trusted partner in building, innovation, and digital growth across the Middle East and India.</p>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-                    <h5 class="footer-heading">Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#why-us">Why Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
-                    <h5 class="footer-heading">Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="cookie.html">Cookie Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
-                    <h5 class="footer-heading">Contact</h5>
-                    <p class="text-secondary">
-                        📍 Corporate Office: Bahrain<br>
-                        🌍 Regional Presence: India | Saudi Arabia
-                    </p>
-                </div>
-            </div>
-            <div class="text-center p-3 mt-4 footer-bottom">
-                © ${new Date().getFullYear()} Grace Arabia Company for Contracting. All Rights Reserved.
-            </div>
-        </div>
-    `;
-
-    // Inject Navbar and Footer into all pages
-    const navbar = document.getElementById('navbar');
-    const footer = document.getElementById('footer');
-    if (navbar) navbar.innerHTML = navbarHTML;
-    if (footer) footer.innerHTML = footerHTML;
-
-
-    // --- Scroll Animations ---
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const delay = entry.target.getAttribute('data-delay') || 0;
-                setTimeout(() => {
-                    entry.target.classList.add('is-visible');
-                }, delay);
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1
+    navbarToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
     });
 
-    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
-    elementsToAnimate.forEach(el => observer.observe(el));
-
-
-    // --- Active Nav Link on Scroll for index.html ---
-    // Only run this part on the main page
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
-        const navLinks = document.querySelectorAll('#navbarNav .nav-link');
-        const sections = document.querySelectorAll('main section');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Hide detail page if a main section link is clicked
+            detailPage.classList.add('hidden');
+            
+            // Show all sections again before scrolling
+            allSections.forEach(section => {
+                section.classList.remove('hidden');
             });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
+            
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
-    }
+    });
+
+    // Card click logic
+    cardLinks.forEach(card => {
+        card.addEventListener('click', () => {
+            const serviceId = card.getAttribute('data-service-id');
+            const serviceTitle = card.getAttribute('data-service-title');
+            const serviceIcon = card.getAttribute('data-service-icon');
+            const serviceDescription = card.getAttribute('data-service-description');
+            
+            // Show loading screen
+            loadingScreen.classList.remove('fade-out');
+            mainPageContent.classList.remove('show');
+            
+            // Simulate a delay for the loading animation
+            setTimeout(() => {
+                // Hide all other sections
+                allSections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+                
+                // Show the detail page and populate content
+                detailPage.classList.remove('hidden');
+                detailContent.innerHTML = `
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight text-light-text mb-6">${serviceTitle}</h2>
+                    <div class="flex items-center space-x-4 mb-8">
+                        <div class="p-6 bg-blue-200 text-blue-800 rounded-lg flex-shrink-0">
+                            <i class="${serviceIcon} text-4xl"></i>
+                        </div>
+                        <p class="text-gray-300 text-lg">${serviceDescription}</p>
+                    </div>
+                    <p class="text-gray-400">This is a detailed page for ${serviceTitle}. Here you can add more information about the service, case studies, or a contact form specific to this offering. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque, sapien in placerat fermentum, ligula eros efficitur justo, eget consectetur leo ligula ac metus.</p>
+                `;
+                
+                // Hide loading screen and show main content
+                loadingScreen.classList.add('fade-out');
+                mainPageContent.classList.add('show');
+                
+                // Scroll to the top of the detail page
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 1000); // 1-second delay
+        });
+    });
+
+    // Back button logic
+    backButton.addEventListener('click', () => {
+        detailPage.classList.add('hidden');
+        allSections.forEach(section => {
+            section.classList.remove('hidden');
+        });
+        window.scrollTo({ top: document.getElementById('our-services').offsetTop, behavior: 'smooth' });
+    });
+
+    // Initial AOS initialization
+    AOS.init({
+        once: false,
+        duration: 800,
+    });
+
+    // Loading screen logic
+    setTimeout(() => {
+        loadingScreen.classList.add('fade-out');
+        mainPageContent.classList.add('show');
+    }, 500);
 });
