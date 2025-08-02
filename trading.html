@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Arabia - Construction & Maintenance</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animate on Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="bg-black text-light-text font-inter">
+    <!-- Main Content Container -->
+    <div id="main-content" class="content">
+      <!-- Top Header Bar -->
+      <header class="header-top py-2 px-4 md:px-8">
+        <div
+          class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm"
+        >
+          <div
+            class="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4"
+          >
+            <span class="flex items-center space-x-2">
+              <i class="fas fa-map-marker-alt text-light-text"></i>
+              <span>Corporate Office: Bahrain</span>
+            </span>
+            <span class="flex items-center space-x-2">
+              <i class="fas fa-globe-americas text-light-text"></i>
+              <span>Regional Presence: India | Bahrain | Saudi Arabia</span>
+            </span>
+          </div>
+          <div class="flex items-center space-x-4 mt-2 md:mt-0">
+            <a href="#" class="text-light-text hover:text-gray-300"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-light-text hover:text-gray-300"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-light-text hover:text-gray-300"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-light-text hover:text-gray-300"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+            <a href="#" class="btn-outline-orange text-xs uppercase px-4 py-2"
+              >Free Consulting</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="header-main sticky top-0 z-50 shadow-md bg-dark-header-bg">
+        <div
+          class="container mx-auto px-4 py-4 flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="https://placehold.co/100x30/111315/f5a623?text=Grace+Arabia"
+              alt="Grace Arabia Logo"
+              class="h-8"
+            />
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="index.html#home"
+              class="page-link text-light-text font-semibold"
+              >Home</a
+            >
+            <a
+              href="index.html#about"
+              class="page-link text-light-text font-semibold"
+              >About Us</a
+            >
+
+            <!-- Dropdown -->
+            <div class="relative group">
+              <!-- Main Division Link -->
+              <a
+                href="#division"
+                class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
+              >
+                Division
+                <i class="fas fa-chevron-down text-sm mt-0.5"></i>
+              </a>
+
+              <!-- Dropdown Menu -->
+              <div
+                style="background-color: #161414"
+                class="absolute left-0 mt-3 w-56 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50"
+              >
+                <a
+                  href="construction.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Construction & Maintenance
+                </a>
+                <a
+                  href="trading.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Trading Division
+                </a>
+                <a
+                  href="digital-marketing.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Digital Marketing
+                </a>
+                <a
+                  href="interior-design.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Interior Designing
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="index.html#our-services"
+              class="page-link text-light-text font-semibold"
+              >Our Services</a
+            >
+            <a
+              href="index.html#contact"
+              class="page-link text-light-text font-semibold"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Right Actions -->
+          <div class="flex items-center space-x-4">
+            <div class="hidden lg:flex items-center space-x-2">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-header-bg rounded-full"
+              >
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <div class="text-sm text-gray-400">Hot Line Number</div>
+                <div class="font-bold text-light-text">+123 8989 444</div>
+              </div>
+            </div>
+            <button
+              id="navbar-toggle"
+              class="lg:hidden w-12 h-12 text-light-text hover:text-accent-orange focus:outline-none"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden lg:hidden bg-dark-header-bg shadow-lg p-4 space-y-2"
+        >
+          <a
+            href="index.html#home"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >Home</a
+          >
+          <a
+            href="index.html#about"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >About Us</a
+          >
+
+          <!-- Division Mobile Dropdown -->
+          <div class="pt-2">
+            <span class="block py-2 px-4 text-light-text font-semibold"
+              >Division</span
+            >
+            <div class="pl-4 space-y-1">
+              <a
+                href="construction.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Construction & Maintenance</a
+              >
+              <a
+                href="trading.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Trading Division</a
+              >
+              <a
+                href="digital-marketing.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Digital Marketing</a
+              >
+              <a
+                href="interior-design.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Interior Designing</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="index.html#our-services"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >Our Services</a
+          >
+          <a
+            href="index.html#contact"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >Contact</a
+          >
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <main class="container mx-auto px-4 py-16">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 text-accent-orange">
+          Trading Division
+        </h1>
+
+        <p class="mb-6 leading-relaxed">
+          Our trading division connects businesses with top-quality materials
+          and equipment sourced from trusted global suppliers. Whether you’re a
+          contractor, developer, or business owner, we help you get what you
+          need — on time and within budget.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-accent-orange mb-4">
+          Product Categories:
+        </h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            Premium Construction Materials (cement, tiles, steel, gypsum, etc.)
+          </li>
+          <li>
+            Electrical & HVAC Systems (switchgear, ducting, cabling, automation
+            units)
+          </li>
+          <li>Plumbing & Sanitary Equipment</li>
+          <li>Lighting, Tools, Safety Gear & Hardware</li>
+          <li>Office & Industrial Supplies</li>
+          <li>Bulk and Custom Sourcing for Special Projects</li>
+        </ul>
+
+        <div class="mt-6 p-4 bg-accent-orange text-white rounded-lg shadow">
+          <strong>🚛 Logistics Support:</strong>
+          Efficient warehousing and delivery system across Bahrain, India, and
+          Saudi Arabia.
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <div class="bg-dark-bg pt-20 pb-4">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <!-- Footer Column 1 -->
+            <div data-aos="fade-right">
+              <a href="#" class="flex items-center space-x-2 mb-4">
+                <img
+                  src="https://placehold.co/100x30/111315/f5a623?text=Grace+Arabia"
+                  alt="Grace Arabia Logo"
+                  class="h-8"
+                />
+              </a>
+              <p class="text-gray-400 mb-4">
+                When An Unknown Printer Took A Galley Of Type Aned Scrambled It
+                To Make A Type Specimen Book.
+              </p>
+              <div class="text-gray-400">
+                <i class="fas fa-phone-alt text-accent-orange mr-2"></i>+123 888
+                9999
+              </div>
+              <div class="text-gray-400 mt-2">
+                <i class="fas fa-clock text-accent-orange mr-2"></i>Mon-Sat: 8
+                am - 5 pm<br />Sunday: CLOSED
+              </div>
+            </div>
+
+            <!-- Footer Column 2: Menu -->
+            <div data-aos="fade-up" data-aos-delay="200">
+              <h4 class="text-xl font-bold text-light-text mb-4">Menu</h4>
+              <ul class="space-y-2 footer-nav">
+                <li>
+                  <a
+                    href="#about"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#our-services"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Our Divisions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Press media</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Our Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#privacy"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer Column 3: Quick Links -->
+            <div data-aos="fade-up" data-aos-delay="300">
+              <h4 class="text-xl font-bold text-light-text mb-4">
+                Quick Links
+              </h4>
+              <ul class="space-y-2 footer-nav">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >How it Work</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Partners</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Pricing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer Column 4: Newsletter -->
+            <div data-aos="fade-left" data-aos-delay="400">
+              <h4 class="text-xl font-bold text-light-text mb-4">
+                Our Newsletter
+              </h4>
+              <p class="text-gray-400 mb-4">
+                Sign Up To Printer's Weekly Newsletter To Get The Latest
+                Updates.
+              </p>
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Enter Your E-mail"
+                  class="form-input rounded-r-none"
+                />
+                <button
+                  type="button"
+                  class="form-btn-blue hover:bg-blue-600 rounded-l-none"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <div class="flex items-center space-x-4 mt-6">
+                <a
+                  href="#"
+                  class="social-icon-dark hover:text-white transition-colors"
+                  ><i class="fab fa-facebook-f text-2xl"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon-dark hover:text-white transition-colors"
+                  ><i class="fab fa-twitter text-2xl"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon-dark hover:text-white transition-colors"
+                  ><i class="fab fa-instagram text-2xl"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon-dark hover:text-white transition-colors"
+                  ><i class="fab fa-pinterest-p text-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bg-dark py-4 text-center text-gray-500">
+          <p>Copyright © Grace Arabia. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS Script -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Mobile Menu Toggle -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navbarToggle = document.getElementById("navbar-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mainPageContent = document.getElementById("main-content");
+
+        navbarToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Hide detail page if a main section link is clicked
+            detailPage.classList.add("hidden");
+
+            // Show all sections again before scrolling
+            allSections.forEach((section) => {
+              section.classList.remove("hidden");
+            });
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+
+        // Initial AOS initialization
+        AOS.init({
+          once: false,
+          duration: 800,
+        });
+
+        // Loading screen logic
+        setTimeout(() => {
+          // loadingScreen.classList.add('fade-out');
+          mainPageContent.classList.add("show");
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
