@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Card click logic
   cardLinks.forEach((card) => {
     card.addEventListener("click", () => {
-      const serviceId = card.getAttribute("data-service-id");
       const serviceTitle = card.getAttribute("data-service-title");
       const serviceIcon = card.getAttribute("data-service-icon");
       const serviceDescription = card.getAttribute("data-service-description");

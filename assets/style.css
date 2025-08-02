@@ -240,10 +240,10 @@ body {
 .hero-shapes .shape-1 {
   width: 450px;
   height: 450px;
-  right: -200px;
-  top: 65%;
+  top: 40%;
+  left:80%;
   transform: translateY(-50%);
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 
 .hero-shapes .shape-2 {
