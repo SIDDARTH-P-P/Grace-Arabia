@@ -304,9 +304,9 @@ body {
   }
 
   /* Responsive */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .hero-text-gradient {
       font-size: 3rem !important;
     }
-  }
+  } */
   

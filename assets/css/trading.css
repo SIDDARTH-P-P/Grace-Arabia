@@ -209,6 +209,12 @@
       overflow: hidden;
     }
 
+    @media (min-width: 360px) {
+      .product-card .icon-container {
+        width: 55px;
+        height: 55px;      }
+    }
+
     .product-card:hover .icon-container {
       transform: rotate(10deg) scale(1.1);
       box-shadow: 0 10px 20px rgba(245, 166, 35, 0.4);
