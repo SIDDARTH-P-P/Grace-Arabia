@@ -103,7 +103,6 @@
                   </a>
                 </div>
               </div>
-
               <a
                 href="#our-services"
                 class="page-link text-light-text font-semibold transition-colors"
@@ -308,7 +307,7 @@
                   <h2
                     class="text-4xl md:text-4xl font-extrabold leading-tight text-light-text mb-6"
                   >
-                    About Us – <span class="accent-orange">Grace Arabia</span>
+                    About Us
                   </h2>
                   <p class="text-gray-300 text-lg mb-6">
                     Grace Arabia is a diversified business group offering
@@ -331,7 +330,7 @@
 
               <!-- Right Image Content -->
               <div
-                class="lg:w-1/2 flex justify-center lg:justify-center"
+                class="lg:w-[790px] lg:h-[500px] flex justify-center lg:justify-center"
                 data-aos="fade-left"
               >
                 <img
@@ -356,7 +355,9 @@
                     class="fas fa-hard-hat text-accent-orange text-2xl mr-4 mt-1"
                   ></i>
                   <div>
-                    <h4 class="text-xl font-semibold text-light-text accent-orange">
+                    <h4
+                      class="text-xl font-semibold text-light-text accent-orange"
+                    >
                       Construction & Maintenance
                     </h4>
                     <p>
@@ -375,7 +376,9 @@
                     class="fas fa-shopping-cart text-accent-orange text-2xl mr-4 mt-1"
                   ></i>
                   <div>
-                    <h4 class="text-xl font-semibold text-light-text accent-orange">
+                    <h4
+                      class="text-xl font-semibold text-light-text accent-orange"
+                    >
                       Trading
                     </h4>
                     <p>
@@ -394,7 +397,9 @@
                     class="fas fa-desktop text-accent-orange text-2xl mr-4 mt-1"
                   ></i>
                   <div>
-                    <h4 class="text-xl font-semibold text-light-text accent-orange">
+                    <h4
+                      class="text-xl font-semibold text-light-text accent-orange"
+                    >
                       Digital Marketing Agency
                     </h4>
                     <p>
@@ -413,7 +418,9 @@
                     class="fas fa-couch text-accent-orange text-2xl mr-4 mt-1"
                   ></i>
                   <div>
-                    <h4 class="text-xl font-semibold text-light-text accent-orange">
+                    <h4
+                      class="text-xl font-semibold text-light-text accent-orange"
+                    >
                       Interior Designing & Manufacturing
                     </h4>
                     <p>
@@ -553,20 +560,9 @@
           id="contact"
           class="py-20 request-callback-bg relative overflow-hidden"
         >
-          <div class="absolute inset-0 z-0 pointer-events-none">
-            <svg
-              class="absolute top-0 left-0 w-full h-full opacity-10"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-            >
-              <path d="M0,0 H100 V100 H0 Z" fill="#fff" opacity="0.1" />
-              <path d="M0,25 H100 V75 H0 Z" fill="#fff" opacity="0.1" />
-              <path d="M0,50 H100 V100 H0 Z" fill="#fff" opacity="0.1" />
-            </svg>
-          </div>
-          <div class="container mx-auto px-4 relative z-10" data-aos="fade-up">
+          <div class="context">
             <div
-              class="bg-dark-header-bg rounded-lg shadow-xl p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8"
+              class="rounded-lg shadow-xl p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8"
             >
               <!-- Left CTA Block -->
               <div class="lg:w-1/2 text-center lg:text-left">
@@ -605,16 +601,34 @@
               </div>
             </div>
           </div>
+
+          <div class="area">
+            <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div
+            class="context container mx-auto px-4 relative z-10"
+            data-aos="fade-up"
+          ></div>
         </section>
       </main>
 
       <!-- Footer -->
-      <div class="bg-dark-bg pt-4">
+      <div class="bg-dark-bg pt-16">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            <!-- Footer Column 1 -->
             <div data-aos="fade-right">
-              <a href="#" class="flex items-center space-x-2 mb-4">
+              <a href="#" class="flex items-center space-x-2 mb-6">
                 <img
                   src="https://placehold.co/100x30/111315/f5a623?text=Grace+Arabia"
                   alt="Grace Arabia Logo"
@@ -622,7 +636,7 @@
                 />
               </a>
               <p class="text-gray-400 mb-4">
-                <i class="fas fa-map-marker-alt text-light-text"></i>
+                <i class="fas fa-map-marker-alt text-light-text mr-2"></i>
                 <span class="text-[13px]">Corporate Office: Bahrain</span>
                 <span class="flex items-center space-x-2">
                   <i class="fas fa-globe-americas text-light-text"></i>
@@ -632,42 +646,47 @@
                 </span>
               </p>
               <div class="text-gray-400 mb-10">
-                <i class="fas fa-phone-alt text-accent-orange mr-2"></i>+123 888
+                <i class="fas fa-phone text-accent-orange mr-2"></i>+123 888
                 9999
               </div>
             </div>
 
-            <!-- Footer Column 2: Menu -->
             <div data-aos="fade-up" data-aos-delay="200">
-              <h4 class="text-xl font-bold text-light-text mb-4">Menu</h4>
+              <h4 class="text-xl font-bold text-light-text mb-6">Menu</h4>
               <ul class="space-y-2 footer-nav">
                 <li>
                   <a
-                    href="#about"
+                    href="index.html#about"
                     class="text-gray-400 hover:text-white transition-colors"
                     >About Us</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#our-services"
+                    href="index.html#our-services"
                     class="text-gray-400 hover:text-white transition-colors"
-                    >Our Divisions</a
+                    >Our Services</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#contact"
+                    href="index.html#contact"
                     class="text-gray-400 hover:text-white transition-colors"
                     >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="terms&condition.html"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Terms & Conditions</a
                   >
                 </li>
               </ul>
             </div>
 
-            <!-- Footer Column 3: Quick Links -->
             <div data-aos="fade-up" data-aos-delay="300">
-              <h4 class="text-xl font-bold text-light-text mb-4">
+              <h4 class="text-xl font-bold text-light-text mb-6">
                 Quick Links
               </h4>
               <ul class="space-y-2 footer-nav">
@@ -692,12 +711,18 @@
                     >Privacy Policy</a
                   >
                 </li>
+                <li>
+                  <a
+                    href="#cookies"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Cookies</a
+                  >
+                </li>
               </ul>
             </div>
 
-            <!-- Footer Column 4: Newsletter -->
             <div data-aos="fade-left" data-aos-delay="400">
-              <h4 class="text-xl font-bold text-light-text mb-4">
+              <h4 class="text-xl font-bold text-light-text mb-6">
                 Social media
               </h4>
               <div class="flex items-center space-x-4 mt-6">
@@ -725,8 +750,47 @@
             </div>
           </div>
         </div>
-
-        <div class="footer-bg-dark py-4 text-center text-gray-500">
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <div
+          class="bg-white pt-2 md:pt-0 pb-2 text-[10px] md:text-[14px] text-center text-gray-500"
+        >
           <p>Copyright © Grace Arabia. All Right Reserved</p>
         </div>
       </div>
