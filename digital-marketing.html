@@ -7,17 +7,20 @@
   <title>Grace Arabia - Digital Marketing Agency</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="stylesheet" href="assets/css/digital-marketing.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="./assets/css/digital-marketing.css" rel="stylesheet" />
 </head>
 
-<body class="bg-black text-light-text font-inter">
-
+<body class="bg-gray-900 text-white font-inter">
   <!-- Loading Screen -->
   <div id="loading-screen">
     <div class="luxury-loader">
@@ -28,11 +31,10 @@
     <div class="loading-text font-playfair">GRACE ARABIA</div>
   </div>
 
-  <div id="main-content" class="content">
-
+  <div id="main-content" style="display: none;">
     <!-- Main Navigation Bar -->
     <nav id="navbar" class="header-main fixed top-0 z-50 shadow-md w-full">
-      <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
         <!-- Logo -->
         <a href="/index.html#home" class="flex items-center space-x-2">
           <img src="https://placehold.co/100x30/111315/f5a623?text=Grace+Arabia" alt="Grace Arabia Logo" class="h-8" />
@@ -40,14 +42,13 @@
 
         <!-- Navigation Links (Hidden on small screens) -->
         <div class="hidden lg:flex items-center space-x-8">
-          <a href="/index.html#home" class="page-link text-light-text font-semibold transition-colors">Home</a>
-          <a href="/index.html#about" class="page-link text-light-text font-semibold transition-colors">About Us</a>
+          <a href="/index.html#home" class="page-link text-white font-semibold transition-colors">Home</a>
+          <a href="/index.html#about" class="page-link text-white font-semibold transition-colors">About Us</a>
 
           <!-- Division with Dropdown -->
           <div class="relative group">
             <!-- Main Division Link -->
-            <a href="#"
-              class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1">
+            <a href="#" class="page-link text-white font-semibold transition-colors  flex items-center gap-1">
               Division
               <i class="fas fa-chevron-down text-sm mt-0.5"></i>
             </a>
@@ -56,184 +57,442 @@
             <div style="background-color: #161414"
               class="absolute left-0 mt-3 w-56 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
               <a href="construction.html"
-                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
+                class="block px-4 py-3 text-white hover:bg-orange-500 hover:text-black transition duration-200">
                 Construction & Maintenance
               </a>
               <a href="trading.html"
-                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
+                class="block px-4 py-3 text-white hover:bg-orange-500 hover:text-black transition duration-200">
                 Trading Division
               </a>
               <a href="digital-marketing.html"
-                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
+                class="block px-4 py-3 text-white hover:bg-orange-500 hover:text-black transition duration-200">
                 Digital Marketing
               </a>
               <a href="interior-design.html"
-                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
+                class="block px-4 py-3 text-white hover:bg-orange-500 hover:text-black transition duration-200">
                 Interior Designing
               </a>
             </div>
           </div>
 
-          <a href="/index.html#our-services" class="page-link text-light-text font-semibold transition-colors">Our
+          <a href="/index.html#our-services" class="page-link text-white font-semibold transition-colors">Our
             Services</a>
-          <a href="/index.html#contact" class="page-link text-light-text font-semibold transition-colors">Contact</a>
-          <a href="#"
-            class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1">
+          <a href="/index.html#contact" class="page-link text-white font-semibold transition-colors">Contact</a>
+          <a href="#" class="page-link text-white font-semibold transition-colors  flex items-center gap-1">
             Our Blog
           </a>
         </div>
 
-        <!-- Hotline, Search, and Hamburger Menu -->
+        <!-- Hotline and Hamburger Menu -->
         <div class="flex items-center space-x-4">
           <div class="hidden lg:flex items-center space-x-2">
-            <div class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full">
+            <div class="w-12 h-12 flex items-center justify-center">
               <i class="fas fa-phone-alt"></i>
             </div>
             <div>
               <div class="text-sm text-gray-400">Hot Line Number</div>
-              <div class="font-bold text-light-text">+123 8989 444</div>
+              <div class="font-bold text-white">+123 8989 444</div>
             </div>
           </div>
-          <button id="navbar-toggle"
-            class="lg:hidden w-12 h-12 text-light-text hover:text-accent-orange focus:outline-none">
+          <button id="navbar-toggle" class="lg:hidden w-12 h-12 text-white hover:text-orange-500 focus:outline-none">
             <i class="fas fa-bars text-xl"></i>
           </button>
         </div>
       </div>
 
-      <!-- Mobile Navigation Menu (Hidden by default) -->
-      <div id="mobile-menu" style="background-color: #1b1c1f"
-        class="hidden lg:hidden bg-dark-header-bg font-semibold shadow-lg p-4 space-y-2">
-        <a href="index.html#home"
-          class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded">Home</a>
-        <a href="index.html#about" class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded">About
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" style="background-color: #1b1c1f" class="hidden lg:hidden shadow-lg p-4 space-y-2">
+        <a href="index.html#home" class="block py-2 px-4 text-white hover:bg-gray-700 font-semibold rounded">Home</a>
+        <a href="index.html#about" class="block py-2 px-4 text-white hover:bg-gray-700 font-semibold rounded">About
           Us</a>
-
-        <!-- Division Mobile Dropdown -->
         <div class="pt-2">
-          <span class="block py-2 px-4 text-light-text font-semibold">Division</span>
+          <span class="block py-2 px-4 text-white font-semibold">Division</span>
           <div class="pl-4 space-y-1">
-            <a href="construction.html" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Construction &
+            <a href="construction.html" class="block py-2 px-4 text-white hover:bg-gray-700 rounded">Construction &
               Maintenance</a>
-            <a href="trading.html" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Trading
-              Division</a>
-            <a href="digital-marketing.html" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Digital
+            <a href="trading.html" class="block py-2 px-4 text-white hover:bg-gray-700 rounded">Trading Division</a>
+            <a href="digital-marketing.html" class="block py-2 px-4 text-white hover:bg-gray-700 rounded">Digital
               Marketing</a>
-            <a href="interior-design.html" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Interior
+            <a href="interior-design.html" class="block py-2 px-4 text-white hover:bg-gray-700 rounded">Interior
               Designing</a>
           </div>
-
           <a href="index.html#our-services"
-            class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded">Our Services</a>
+            class="block py-2 px-4 text-white hover:bg-gray-700 font-semibold rounded">Our Services</a>
           <a href="index.html#contact"
-            class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded">Contact</a>
+            class="block py-2 px-4 text-white hover:bg-gray-700 font-semibold rounded">Contact</a>
         </div>
+      </div>
     </nav>
 
-    <main class="mx-auto px-0 py-16 bg-center bg-no-repeat text-white relative overflow-hidden" style="
-    background-image: url('assets/images/Marketing.png');
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-  ">
-      <div class="absolute inset-0 bg-black opacity-40"></div>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          alt="Digital Marketing" class="w-full h-full object-cover opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60"></div>
+      </div>
 
-      <div class="relative z-10">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-accent-orange text-center" data-aos="fade-down">
-          <i class="fas fa-bullhorn text-5xl mr-3 text-orange-500"></i> Digital Marketing Agency
+      <!-- Floating Digital Icons -->
+      <div class="floating-icon top-20 left-10 text-orange-400 text-4xl">
+        <i class="fab fa-instagram float-slow"></i>
+      </div>
+      <div class="floating-icon top-40 right-20 text-blue-400 text-3xl">
+        <i class="fab fa-facebook float-medium"></i>
+      </div>
+      <div class="floating-icon bottom-40 left-20 text-red-400 text-5xl">
+        <i class="fab fa-youtube float-fast"></i>
+      </div>
+      <div class="floating-icon top-60 right-40 text-green-400 text-4xl">
+        <i class="fab fa-whatsapp float-slow"></i>
+      </div>
+      <div class="floating-icon bottom-60 right-10 text-blue-500 text-3xl">
+        <i class="fab fa-linkedin float-medium"></i>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 text-center max-w-6xl mx-auto px-6 fade-in-up">
+        <div
+          class="pulse-ring w-24 h-24 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center mx-auto mb-8 mt-32">
+          <i class="fas fa-rocket text-3xl text-black"></i>
+        </div>
+
+        <h1 class="hero-text-gradient font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          Digital Marketing Agency
         </h1>
 
-        <p class="mb-8 leading-relaxed text-lg text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-          In today’s connected world, your brand’s digital presence is your
-          first impression. Our digital division offers strategy-led creative
-          services to ensure your business is visible, impactful, and constantly
-          growing online.
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto font-light leading-relaxed">
+          In today's connected world, your brand's digital presence is your first impression. Our digital division
+          offers strategy-led creative services to ensure your business is visible, impactful, and constantly growing
+          online.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 md:ml-10">
-          <div data-aos="fade-right" data-aos-delay="400"
-            class="bg-gray-900 bg-opacity-70 p-8 rounded-lg shadow-xl border border-gray-700">
-            <h2 class="text-3xl font-bold text-accent-orange mb-6 flex items-center">
-              <i class="fas fa-cogs text-4xl mr-3"></i> Our Digital Solutions Include:
+        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
+          <a href="/index.html#contact"
+            class="inline-block bg-orange-500 text-black font-bold py-4 px-8 rounded-full hover:bg-orange-600 shadow-lg uppercase tracking-wide transition-all duration-300 transform hover:scale-105">
+            Get Free Consultation
+          </a>
+          <div class="roi-badge">
+            <i class="fas fa-chart-line mr-2"></i>
+            Measurable ROI Guaranteed
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center slide-in-left">
+            <div class="stats-number mb-2">500+</div>
+            <div class="text-gray-400 font-medium">Campaigns Launched</div>
+          </div>
+          <div class="text-center slide-in-left" style="animation-delay: 0.2s;">
+            <div class="stats-number mb-2">98%</div>
+            <div class="text-gray-400 font-medium">Client Retention</div>
+          </div>
+          <div class="text-center slide-in-right">
+            <div class="stats-number mb-2">15M+</div>
+            <div class="text-gray-400 font-medium">Reach Generated</div>
+          </div>
+          <div class="text-center slide-in-right" style="animation-delay: 0.2s;">
+            <div class="stats-number mb-2">3x</div>
+            <div class="text-gray-400 font-medium">Average ROI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Solutions Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="luxury-card rounded-3xl p-12">
+          <div class="text-center mb-16 fade-in-up">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-400 to-red-400 rounded-full mb-6 pulse-ring">
+              <i class="fas fa-digital-tachograph text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
+              Our Digital Solutions Include
             </h2>
-            <ul class="list-none space-y-5 text-lg">
-              <li class="flex items-start">
-                <i class="fas fa-globe mr-3 mt-1 text-accent-orange"></i>
-                <span><strong>Custom Website & eCommerce Development</strong> (WordPress, Shopify, etc.)</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fab fa-instagram mr-3 mt-1 text-accent-orange"></i>
-                <span><strong>Full Social Media Management</strong> (Instagram, Facebook, LinkedIn, TikTok)</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-lightbulb mr-3 mt-1 text-accent-orange"></i>
-                <span><strong>Branding:</strong> Logos, Identity Kits, Brochures & Corporate Collaterals</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-money-bill-wave mr-3 mt-1 text-accent-orange"></i>
-                <span><strong>Paid Media Campaigns</strong> (Google Ads, Meta Ads, YouTube, etc.)</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-search mr-3 mt-1 text-accent-orange"></i>
-                <span><strong>SEO & Content Marketing</strong></span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-camera-retro mr-3 mt-1 text-accent-orange"></i>
-                <span><strong>Photography, Videography & Reels Creation</strong></span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-user-friends mr-3 mt-1 text-accent-orange"></i>
-                <span><strong>Influencer Campaigns & Regional Targeting</strong> (GCC & India)</span>
-              </li>
-            </ul>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="600" class="flex items-center justify-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Website Development -->
+            <div class="service-card p-8 rounded-xl slide-in-left">
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 float-slow">
+                  <i class="fas fa-code text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Website & eCommerce Development</h3>
+                <p class="text-gray-300 mb-4">Custom WordPress, Shopify & modern web solutions that convert visitors
+                  into customers</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">WordPress</span>
+                  <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">Shopify</span>
+                  <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Custom</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Management -->
+            <div class="service-card p-8 rounded-xl fade-in-up" style="animation-delay: 0.2s;">
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-pink-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 float-medium">
+                  <i class="fas fa-share-alt text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Full Social Media Management</h3>
+                <p class="text-gray-300 mb-4">Strategic content creation and community management across all platforms
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full text-sm">Instagram</span>
+                  <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Facebook</span>
+                  <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm">LinkedIn</span>
+                  <span class="bg-gray-500/20 text-gray-300 px-3 py-1 rounded-full text-sm">TikTok</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Branding -->
+            <div class="service-card p-8 rounded-xl slide-in-right">
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 float-fast">
+                  <i class="fas fa-palette text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Branding & Identity</h3>
+                <p class="text-gray-300 mb-4">Complete brand identity including logos, guidelines, and corporate
+                  materials</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm">Logos</span>
+                  <span class="bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full text-sm">Identity Kits</span>
+                  <span class="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm">Brochures</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paid Advertising -->
+            <div class="service-card p-8 rounded-xl slide-in-left" style="animation-delay: 0.4s;">
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4 float-slow">
+                  <i class="fas fa-bullhorn text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Paid Media Campaigns</h3>
+                <p class="text-gray-300 mb-4">Data-driven advertising campaigns that maximize your return on investment
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Google Ads</span>
+                  <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm">Meta Ads</span>
+                  <span class="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm">YouTube</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SEO & Content -->
+            <div class="service-card p-8 rounded-xl fade-in-up" style="animation-delay: 0.6s;">
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 float-medium">
+                  <i class="fas fa-search text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">SEO & Content Marketing</h3>
+                <p class="text-gray-300 mb-4">Organic growth through strategic SEO and compelling content creation</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">SEO</span>
+                  <span class="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">Content</span>
+                  <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Blogging</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Creative Content -->
+            <div class="service-card p-8 rounded-xl slide-in-right" style="animation-delay: 0.8s;">
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4 float-fast">
+                  <i class="fas fa-camera text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Creative Content Production</h3>
+                <p class="text-gray-300 mb-4">Professional photography, videography, and viral content creation</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Photography</span>
+                  <span class="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-sm">Videography</span>
+                  <span class="bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full text-sm">Reels</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goal Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="luxury-card rounded-3xl p-12 text-center fade-in-up">
+          <div class="flex justify-center mb-6">
             <div
-              class="p-8 bg-gradient-to-r from-accent-orange to-orange-600 text-white rounded-lg shadow-2xl text-center transform hover:scale-105 transition-transform duration-300">
-              <i class="fas fa-chart-line text-6xl mb-4 opacity-80"></i>
-              <h3 class="text-3xl font-bold mb-3">Achieve Your Digital Goals!</h3>
-              <p class="text-lg mb-6">
-                Generate leads, increase visibility, boost conversions — all with measurable ROI. Let's grow your
-                business together.
-              </p>
+              class="w-20 h-20 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center pulse-ring">
+              <i class="fas fa-target text-3xl text-black"></i>
+            </div>
+          </div>
+          <h3 class="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">Our Goal</h3>
+          <p class="text-2xl text-orange-400 mb-8 max-w-4xl mx-auto font-bold">
+            Generate leads, increase visibility, boost conversions — all with measurable ROI.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
+            <div class="text-center slide-in-left">
+              <i class="fas fa-users text-4xl text-orange-400 mb-4 float-slow"></i>
+              <h4 class="text-xl font-bold text-white mb-2">Generate Leads</h4>
+              <p class="text-gray-400">Quality prospects that convert into customers</p>
+            </div>
+            <div class="text-center slide-in-left" style="animation-delay: 0.2s;">
+              <i class="fas fa-eye text-4xl text-orange-400 mb-4 float-medium"></i>
+              <h4 class="text-xl font-bold text-white mb-2">Increase Visibility</h4>
+              <p class="text-gray-400">Strategic brand positioning across digital channels</p>
+            </div>
+            <div class="text-center slide-in-right">
+              <i class="fas fa-chart-line text-4xl text-orange-400 mb-4 float-fast"></i>
+              <h4 class="text-xl font-bold text-white mb-2">Boost Conversions</h4>
+              <p class="text-gray-400">Optimized funnels that turn visitors into buyers</p>
+            </div>
+            <div class="text-center slide-in-right" style="animation-delay: 0.2s;">
+              <i class="fas fa-dollar-sign text-4xl text-orange-400 mb-4 float-slow"></i>
+              <h4 class="text-xl font-bold text-white mb-2">Measurable ROI</h4>
+              <p class="text-gray-400">Clear metrics and transparent reporting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regional Focus Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="luxury-card rounded-3xl p-12 fade-in-up">
+          <div class="text-center mb-12">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-400 to-blue-400 rounded-full mb-6 pulse-ring">
+              <i class="fas fa-globe text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
+              Regional Expertise
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+              Specialized in GCC & India markets with deep understanding of local cultures, languages, and consumer
+              behavior
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="slide-in-left">
+              <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <i class="fas fa-map-marker-alt text-orange-400 mr-3"></i>
+                GCC Markets
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Arabic & English content creation</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Cultural sensitivity in campaigns</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Local influencer networks</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Regional social media trends</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-in-right">
+              <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <i class="fas fa-flag text-orange-400 mr-3"></i>
+                India Markets
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Multi-language campaigns</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Tier 1, 2, 3 city strategies</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Festival & seasonal marketing</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-check-circle text-green-400"></i>
+                  <span class="text-gray-300">Cost-effective local solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="luxury-card rounded-3xl p-12 text-center fade-in-up">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
+              Ready to Dominate Digital?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+              Let's discuss your digital marketing goals and create a strategy that delivers real results
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <a href="/index.html#contact"
-                class="inline-block bg-orange-500 text-black font-bold py-3 px-8 rounded-full hover:bg-orange-600 shadow-lg uppercase tracking-wide">
-                Get a Free Consultation
+                class="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-4 px-8 rounded-full hover:from-orange-600 hover:to-red-600 shadow-lg uppercase tracking-wide transition-all duration-300 transform hover:scale-105">
+                <i class="fas fa-rocket mr-2"></i>
+                Start Your Campaign
+              </a>
+              <a href="tel:+1238889999"
+                class="text-white border-2 border-white hover:bg-white hover:text-black transition-all duration-300 px-8 py-4 rounded-full font-medium">
+                <i class="fas fa-phone mr-2"></i>
+                Call Now: +123 888 9999
               </a>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
-    <div class="bg-dark-bg pt-4">
+    <!-- Footer -->
+    <div class="bg-gray-900 pt-4">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div data-aos="fade-right">
+          <div class="fade-in-up">
             <a href="#" class="flex items-center space-x-2 mb-4">
               <img src="https://placehold.co/100x30/111315/f5a623?text=Grace+Arabia" alt="Grace Arabia Logo"
                 class="h-8" />
             </a>
             <p class="text-gray-400 mb-4">
-              <i class="fas fa-map-marker-alt text-light-text"></i>
+              <i class="fas fa-map-marker-alt text-orange-400"></i>
               <span class="text-[13px]">Corporate Office: Bahrain</span>
               <span class="flex items-center space-x-2">
-                <i class="fas fa-globe-americas text-light-text"></i>
+                <i class="fas fa-globe-americas text-orange-400"></i>
                 <span class="text-[13px]">Regional Presence: India | Bahrain | Saudi Arabia</span>
               </span>
             </p>
             <div class="text-gray-400 mb-10">
-              <i class="fas fa-phone-alt text-accent-orange mr-2"></i>+123 888 9999
+              <i class="fas fa-phone-alt text-orange-400 mr-2"></i>+123 888 9999
             </div>
           </div>
 
-          <div data-aos="fade-up" data-aos-delay="200">
-            <h4 class="text-xl font-bold text-light-text mb-4">Menu</h4>
-            <ul class="space-y-2 footer-nav">
+          <div class="fade-in-up" style="animation-delay: 0.2s;">
+            <h4 class="text-xl font-bold text-white mb-4">Menu</h4>
+            <ul class="space-y-2">
               <li>
                 <a href="/index.html#about" class="text-gray-400 hover:text-white transition-colors">About Us</a>
               </li>
@@ -247,11 +506,9 @@
             </ul>
           </div>
 
-          <div data-aos="fade-up" data-aos-delay="300">
-            <h4 class="text-xl font-bold text-light-text mb-4">
-              Quick Links
-            </h4>
-            <ul class="space-y-2 footer-nav">
+          <div class="fade-in-up" style="animation-delay: 0.4s;">
+            <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2">
               <li>
                 <a href="#" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
               </li>
@@ -264,23 +521,26 @@
             </ul>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="400">
-            <h4 class="text-xl font-bold text-light-text mb-4">
-              Social media
-            </h4>
+          <div class="fade-in-up" style="animation-delay: 0.6s;">
+            <h4 class="text-xl font-bold text-white mb-4">Social Media</h4>
             <div class="flex items-center space-x-4 mt-6">
-              <a href="#" class="social-icon-dark hover:text-white transition-colors"><i
-                  class="fab fa-facebook-f text-2xl"></i></a>
-              <a href="#" class="social-icon-dark hover:text-white transition-colors"><i
-                  class="fab fa-twitter text-2xl"></i></a>
-              <a href="#" class="social-icon-dark hover:text-white transition-colors"><i
-                  class="fab fa-instagram text-2xl"></i></a>
-              <a href="#" class="social-icon-dark hover:text-white transition-colors"><i
-                  class="fab fa-pinterest-p text-2xl"></i></a>
+              <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                <i class="fab fa-facebook-f text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
       <div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -288,20 +548,22 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
           </defs>
           <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(245,158,11,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(245,158,11,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(245,158,11,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#f59e0b" />
           </g>
         </svg>
       </div>
-      <div class="bg-white pt-2 md:pt-0 pb-2 text-[10px] md:text-[14px] text-center text-gray-500">
+
+      <div class="bg-orange-500 pt-2 md:pt-0 pb-2 text-[10px] md:text-[14px] text-center text-black">
         <p>Copyright © Grace Arabia. All Right Reserved</p>
       </div>
     </div>
   </div>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script src="./assets/js/digitalMarketing.js"></script>
+
 </body>
 
 </html>

@@ -1,67 +1,84 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const navbarToggle = document.getElementById("navbar-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const mainContent = document.getElementById("main-content");
-  const loadingScreen = document.getElementById("loading-screen");
-
-  if (navbarToggle && mobileMenu) {
-    navbarToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  }
-
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      if (!mobileMenu.classList.contains("hidden")) {
-        mobileMenu.classList.add("hidden");
-      }
-
-      // Scroll to the target section
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
-        // Adjust scroll position for fixed header
-        const headerOffset = document.querySelector('.header-main').offsetHeight;
-        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-        // Added a small buffer (e.g., 20px) to prevent content from being perfectly
-        // hidden behind the fixed header. Adjust as needed.
-        const offsetPosition = elementPosition - headerOffset - 20;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      }
-    });
-  });
-
-  // Initialize AOS (Animate On Scroll) library
-  AOS.init({
-    once: true, // Only animate once as it's a single page section.
-    duration: 1000, // Animation duration in ms
-    easing: 'ease-out-cubic', // Easing function
-  });
-
-  // Loading screen logic
-  // Simulate a network request or asset loading delay
+    // Loading screen
+    window.addEventListener('load', function() {
+      const loadingScreen = document.getElementById("loading-screen");
+      const mainContent = document.getElementById("main-content");
     // Show loading screen initially
     setTimeout(() => {
       loadingScreen.classList.add("fade-out");
       mainContent.classList.add("show");
     }, 1500);
 
+    });
 
-  // Optional: Add a class to the header on scroll for styling changes
-  const headerMain = document.querySelector('.header-main');
-  if (headerMain) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) { // After scrolling 50px
-        headerMain.classList.add('scrolled'); // Add a class for styling
+    // Mobile menu toggle
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Counter animation
+    function animateCounter(element, target) {
+      let current = 0;
+      const increment = target / 100;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        element.textContent = Math.floor(current) + (element.dataset.suffix || '');
+      }, 20);
+    }
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Counter animation
+          if (entry.target.classList.contains('stats-number')) {
+            const target = parseInt(entry.target.textContent);
+            animateCounter(entry.target, target);
+          }
+          
+          // Add animation classes
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements
+    document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right, .stats-number').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      observer.observe(el);
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.style.background = 'rgba(15, 15, 15, 0.98)';
       } else {
-        headerMain.classList.remove('scrolled');
+        navbar.style.background = 'rgba(15, 15, 15, 0.95)';
       }
     });
-  }
-});
