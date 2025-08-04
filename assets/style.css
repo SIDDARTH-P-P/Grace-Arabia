@@ -49,6 +49,56 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.accent-orange {
+  color: var(--accent-orange);
+}
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
 .btn-primary-orange {
   background-color: var(--accent-orange);
   border: none;
@@ -210,22 +260,99 @@ body {
   height: 100%;
   overflow: hidden;
   z-index: 0;
+  pointer-events: none;
 }
 
-.hero-shapes .shape {
+.hero-shapes .circle {
   position: absolute;
-  background-color: rgba(245, 166, 35, 0.1);
+  background-color: rgba(245, 166, 35, 0.2);
   border-radius: 50%;
-  animation: pulse 4s infinite ease-in-out;
+  animation: moveUpDown 4s infinite ease-in-out;
+  box-shadow: 0 0 10px rgba(245, 166, 35, 0.15);
+}
+
+/* Animation: move up and down */
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Individual shapes with different sizes, speeds, and positions */
+.hero-shapes .shape-1 {
+  width: 12px;
+  height: 12px;
+  top: 30%;
+  left: 10%;
+  animation-duration: 3s;
+}
+
+.hero-shapes .shape-2 {
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 20%;
+  animation-duration: 4s;
 }
 
 .hero-shapes .shape-3 {
-  width: 100px;
-  height: 100px;
-  right: 400px;
+  width: 14px;
+  height: 14px;
+  top: 40%;
+  right: 15%;
+  animation-duration: 5s;
+}
+
+.hero-shapes .shape-4 {
+  width: 8px;
+  height: 8px;
   top: 60%;
-  transform: translateY(-50%);
-  animation-duration: 1s;
+  right: 20%;
+  animation-duration: 2s;
+}
+
+.hero-shapes .shape-5 {
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 35%;
+  animation-duration: 6s;
+}
+
+.hero-shapes .shape-6 {
+  width: 16px;
+  height: 16px;
+  top: 45%;
+  left: 50%;
+  animation-duration: 3.5s;
+}
+
+.hero-shapes .shape-7 {
+  width: 10px;
+  height: 10px;
+  top: 55%;
+  right: 30%;
+  animation-duration: 4.5s;
+}
+
+.hero-shapes .shape-8 {
+  width: 12px;
+  height: 12px;
+  top: 35%;
+  right: 5%;
+  animation-duration: 5.5s;
+}
+
+.hero-shapes .shape-9 {
+  width: 200px;
+  height: 200px;
+  top: 75%;
+  left: 5%;
+  animation-duration: 3.5s;
 }
 
 .hero-shapes .shape-4 {
@@ -241,7 +368,7 @@ body {
   width: 450px;
   height: 450px;
   top: 40%;
-  left:80%;
+  left: 80%;
   transform: translateY(-50%);
   animation-duration: 3s;
 }
@@ -329,6 +456,17 @@ body {
 
 .content.show {
   opacity: 1;
+}
+
+.hero-shapes1 {
+  position: absolute;
+  top: 0;
+  left: 30;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .about-us-container {
@@ -487,7 +625,7 @@ body {
 
 .about-image {
   border-radius: 1rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
   transition: transform 0.3s ease-in-out;
 }
 

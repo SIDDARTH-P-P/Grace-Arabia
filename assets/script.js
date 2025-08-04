@@ -104,17 +104,46 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("mobile-menu").classList.add("translate-x-full");
   };
 
-  const dropdownBtn = document.querySelector("#dropdown-button");
-  const dropdownMenu = document.querySelector("#dropdown-menu");
 
-  dropdownBtn.addEventListener("click", function (e) {
-    e.preventDefault(); // prevent a tag from navigating
-    dropdownMenu.classList.toggle("hidden");
+  const toggleBtn = document.getElementById("navbar-toggle");
+  const bar1 = document.getElementById("bar1");
+  const bar2 = document.getElementById("bar2");
+  const bar3 = document.getElementById("bar3");
+
+  const dropdownBtn = document.getElementById("dropdown-button");
+  const dropdownMenu = document.getElementById("dropdown-menu");
+  const dropdownArrow = document.getElementById("dropdown-arrow");
+
+  let menuOpen = false;
+
+  toggleBtn.addEventListener("click", () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle("translate-x-full");
+
+    // Animate hamburger to X
+    if (menuOpen) {
+      bar1.classList.add("rotate-45", "translate-y-1.5");
+      bar2.classList.add("opacity-0");
+      bar3.classList.add("-rotate-45", "-translate-y-1.5");
+    } else {
+      bar1.classList.remove("rotate-45", "translate-y-1.5");
+      bar2.classList.remove("opacity-0");
+      bar3.classList.remove("-rotate-45", "-translate-y-1.5");
+    }
   });
 
-  document.addEventListener('click', function (e) {
-  if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
-    dropdownMenu.classList.add('hidden');
-  }
-});
+  // Dropdown toggle
+  dropdownBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    dropdownMenu.classList.toggle("hidden");
+    dropdownArrow.classList.toggle("rotate-180");
+  });
+
+  // Close dropdown if click outside
+  document.addEventListener("click", (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.add("hidden");
+      dropdownArrow.classList.remove("rotate-180");
+    }
+  });
 });
