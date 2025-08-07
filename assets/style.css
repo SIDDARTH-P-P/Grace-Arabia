@@ -12,6 +12,7 @@
 }
 html,
 body {
+  font-family: 'ProximaNovaRegular', sans-serif !important;
   width: 100%;
   overflow-x: hidden;
   /* Already in your CSS, good */

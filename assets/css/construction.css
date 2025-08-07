@@ -6,11 +6,12 @@
     --dark-header-bg: #1b1c1f;
   }
 
-  .font-playfair { font-family: 'Playfair Display', serif; }
-  .font-inter { font-family: 'Inter', sans-serif; }
+  /* .font-playfair { font-family: 'Playfair Display', serif; } */
+  /* .font-inter {  } */
 
   body {
-    font-family: 'Inter', sans-serif;
+  font-family: 'ProximaNovaRegular', sans-serif !important;
+
     background-color: var(--dark-bg);
     color: var(--light-text);
   }
