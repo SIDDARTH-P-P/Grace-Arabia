@@ -113,29 +113,29 @@
   }
 
   /* Navigation */
-  .header-main {
+  /* .header-main {
     background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
-  }
+  } */
 
-  .page-link {
+  /* .page-link {
     position: relative;
     overflow: hidden;
     padding: 8px 16px;
     border-radius: 6px;
     transition: all 0.3s ease;
-  }
+  } */
 
-  .page-link:hover {
+  /* .page-link:hover {
     color: var(--accent-orange) !important;
     transform: translateY(-2px);
-  }
+  } */
 
-  .bg-accent-orange {
+  /* .bg-accent-orange {
     background-color: var(--accent-orange);
     color: #000;
-  }
+  } */
 
   /* Hero Section */
   .hero-text-gradient {

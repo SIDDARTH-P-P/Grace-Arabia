@@ -37,173 +37,179 @@
 
     <div id="main-content">
       <!-- Main Navigation Bar -->
-      <nav id="navbar" class="header-main fixed top-0 z-50 shadow-md w-full">
+      <nav class="header-main fixed top-0 z-50 shadow-md w-full bg-[#111315]">
         <div
-          class="container mx-auto px-4 py-4 flex items-center justify-between"
+          class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm"
         >
-          <!-- Logo -->
-          <a href="#" class="flex items-center space-x-2 mb-1">
-            <img
-              src="./assets/images/logo.png"
-              alt="Grace Arabia Logo"
-              class="h-16"
-            />
-          </a>
+          <div
+            class="container mx-auto px-4 py-4 flex items-center justify-between w-full"
+          >
+            <!-- Logo -->
+            <a href="index.html#home" class="flex items-center space-x-2">
+              <img
+                src="./assets/images/logo.png"
+                alt="Grace Arabia Logo"
+                class="h-14"
+              />
+            </a>
 
-          <!-- Navigation Links (Hidden on small screens) -->
-          <div class="hidden lg:flex items-center space-x-8">
+            <!-- Desktop Nav Links -->
+            <div class="hidden lg:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="page-link text-light-text font-semibold transition-colors"
+                >Home</a
+              >
+              <a
+                href="index.html#about"
+                class="page-link text-light-text font-semibold transition-colors"
+                >About Us</a
+              >
+
+              <!-- Dropdown -->
+              <div class="relative group">
+                <a
+                  href="#"
+                  class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
+                >
+                  Division
+                  <i class="fas fa-chevron-down text-sm mt-0.5"></i>
+                </a>
+                <div
+                  style="background-color: #161414"
+                  class="absolute left-0 mt-3 w-56 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50"
+                >
+                  <a
+                    href="construction.html"
+                    class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  >
+                    Construction & Maintenance
+                  </a>
+                  <a
+                    href="trading.html"
+                    class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  >
+                    Trading Division
+                  </a>
+                  <a
+                    href="digital-marketing.html"
+                    class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  >
+                    Digital Marketing
+                  </a>
+                  <a
+                    href="interior-design.html"
+                    class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  >
+                    Interior Designing
+                  </a>
+                </div>
+              </div>
+              <a
+                href="index.html#our-services"
+                class="page-link text-light-text font-semibold transition-colors"
+                >Our Services</a
+              >
+              <a
+                href="index.html#contact"
+                class="page-link text-light-text font-semibold transition-colors"
+                >Contact</a
+              >
+              <a
+                href="#blog"
+                class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
+                >Our Blog</a
+              >
+            </div>
+
+            <!-- Hotline and Mobile Menu -->
+            <div class="flex items-center space-x-4">
+              <div class="hidden lg:flex items-center space-x-2">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
+                >
+                  <!-- <i class="fas fa-phone-alt"></i> -->
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-400">Whatsapp </div>
+                  <div class="font-bold text-light-text">
+                    <a href="https://wa.me/+966591513355" target="_blank">+966 59 151 3355</a>
+                  </div>
+                </div>
+              </div>
+              <button
+                id="navbar-toggle"
+                class="lg:hidden w-12 h-12 text-light-text hover:text-accent-orange focus:outline-none"
+              >
+                <i class="fas fa-bars text-xl"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            style="background-color: #1b1c1f"
+            class="hidden lg:hidden w-full px-4 pb-4 bg-dark-header-bg font-semibold shadow-lg space-y-2"
+          >
             <a
               href="index.html#home"
-              class="page-link text-light-text font-semibold transition-colors"
+              class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
               >Home</a
             >
             <a
               href="index.html#about"
-              class="page-link text-light-text font-semibold transition-colors"
+              class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
               >About Us</a
             >
 
-            <!-- Division with Dropdown -->
-            <div class="relative group">
-              <!-- Main Division Link -->
-              <a
-                href="#"
-                class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
+            <!-- Mobile Dropdown for Division -->
+            <div>
+              <span class="block py-2 px-4 text-light-text font-semibold"
+                >Division</span
               >
-                Division
-                <i class="fas fa-chevron-down text-sm mt-0.5"></i>
-              </a>
-
-              <!-- Dropdown Menu -->
-              <div
-                style="background-color: #161414"
-                class="absolute left-0 mt-3 w-56 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50"
-              >
+              <div class="pl-4 space-y-1">
                 <a
                   href="construction.html"
-                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                  >Construction & Maintenance</a
                 >
-                  Construction & Maintenance
-                </a>
                 <a
                   href="trading.html"
-                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                  >Trading Division</a
                 >
-                  Trading Division
-                </a>
                 <a
                   href="digital-marketing.html"
-                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                  >Digital Marketing</a
                 >
-                  Digital Marketing
-                </a>
                 <a
                   href="interior-design.html"
-                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                  class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                  >Interior Designing</a
                 >
-                  Interior Designing
-                </a>
               </div>
             </div>
 
             <a
               href="index.html#our-services"
-              class="page-link text-light-text font-semibold transition-colors"
+              class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
               >Our Services</a
             >
             <a
               href="index.html#contact"
-              class="page-link text-light-text font-semibold transition-colors"
+              class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
               >Contact</a
             >
             <a
-              href="#"
-              class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
-            >
-              Our Blog
-            </a>
-          </div>
-
-          <!-- Hotline, Search, and Hamburger Menu -->
-          <div class="flex items-center space-x-4">
-            <div class="hidden lg:flex items-center space-x-2">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
-              >
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <div>
-                <div class="text-sm text-gray-400">Hot Line Number</div>
-                <div class="font-bold text-light-text">+123 8989 444</div>
-              </div>
-            </div>
-            <button
-              id="navbar-toggle"
-              class="lg:hidden w-12 h-12 text-light-text hover:text-accent-orange focus:outline-none"
-            >
-              <i class="fas fa-bars text-xl"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile Navigation Menu (Hidden by default) -->
-        <div
-          id="mobile-menu"
-          style="background-color: #1b1c1f"
-          class="hidden lg:hidden bg-dark-header-bg font-semibold shadow-lg p-4 space-y-2"
-        >
-          <a
-            href="index.html#home"
-            class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded"
-            >Home</a
-          >
-          <a
-            href="index.html#about"
-            class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded"
-            >About Us</a
-          >
-
-          <!-- Division Mobile Dropdown -->
-          <div class="pt-2">
-            <span class="block py-2 px-4 text-light-text font-semibold"
-              >Division</span
-            >
-            <div class="pl-4 space-y-1">
-              <a
-                href="construction.html"
-                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
-                >Construction & Maintenance</a
-              >
-              <a
-                href="trading.html"
-                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
-                >Trading Division</a
-              >
-              <a
-                href="digital-marketing.html"
-                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
-                >Digital Marketing</a
-              >
-              <a
-                href="interior-design.html"
-                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
-                >Interior Designing</a
-              >
-            </div>
-
-            <a
-              href="index.html#our-services"
-              class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded"
-              >Our Services</a
-            >
-            <a
-              href="index.html#contact"
-              class="block py-2 px-4 text-light-text hover:bg-gray-700 font-semibold rounded"
-              >Contact</a
+              href="#blog"
+              class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+              >Our Blog</a
             >
           </div>
         </div>
-        <!-- ✅ This was missing -->
       </nav>
 
       <!-- Hero Section -->

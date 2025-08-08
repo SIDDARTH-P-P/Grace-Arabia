@@ -203,27 +203,27 @@ body {
 }
 
 /* Header */
-.header-main {
+/* .header-main {
   background: rgba(15, 15, 15, 0.95);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-}
+} */
 
-.page-link {
+/* .page-link {
   position: relative;
   transition: all 0.3s ease;
 }
 
 .page-link:hover {
   color: #f59e0b !important;
-}
+} */
 
-.bg-accent-orange {
+/* .bg-accent-orange {
   background-color: #f59e0b;
   color: #000;
   padding: 8px 16px;
   border-radius: 25px;
-}
+} */
 
 /* Stats counter animation */
 .stats-number {
