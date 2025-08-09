@@ -1,4 +1,5 @@
 body {
+  font-family: 'ProximaNovaRegular', sans-serif !important;
   width: 100%;
   overflow-x: hidden;
 }
@@ -8,13 +9,13 @@ body {
   --light-text: #ffffff;
 }
 
-.font-playfair {
+/* .font-playfair {
   font-family: 'Playfair Display', serif;
 }
 
 .font-inter {
   font-family: 'Inter', sans-serif;
-}
+} */
 
 
   /* Loading Screen */

@@ -10,8 +10,7 @@
   /* .font-inter {  } */
 
   body {
-  font-family: 'ProximaNovaRegular', sans-serif !important;
-
+   font-family: 'ProximaNovaRegular', sans-serif !important;
     background-color: var(--dark-bg);
     color: var(--light-text);
   }

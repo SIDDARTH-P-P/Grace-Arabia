@@ -5,14 +5,15 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      /* font-family: 'Inter', sans-serif; */
+      font-family: 'ProximaNovaRegular', sans-serif !important;
       background-color: var(--dark-bg);
       color: var(--light-text);
     }
 
-    .font-playfair {
+    /* .font-playfair {
       font-family: 'Playfair Display', serif;
-    }
+    } */
 
   /* Loading Screen */
   #loading-screen {
