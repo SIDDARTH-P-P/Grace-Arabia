@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Arabia - Construction & Maintenance</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grace Arabia - Construction & Maintenance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link href="./assets/css/construction.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/construction.css" rel="stylesheet" />
     <link href="./assets/style.css" rel="stylesheet" />
+  </head>
 
-
-</head>
-
-<body>
-  <!-- Loading Screen -->
-  <div id="loading-screen">
-    <div class="luxury-loader">
-      <div class="loader-ring"></div>
-      <div class="loader-ring"></div>
-      <div class="loader-ring"></div>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="luxury-loader">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+      </div>
+      <div class="loading-text font-playfair">GRACE ARABIA</div>
     </div>
-    <div class="loading-text font-playfair">GRACE ARABIA</div>
-  </div>
 
-  <div id="main-content">
-    <!-- Main Navigation Bar -->
+    <div id="main-content">
       <!-- Main Navigation Bar -->
+
       <nav class="header-main fixed top-0 z-50 shadow-md w-full bg-[#111315]">
         <div
-          class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm"
+          class="container mx-auto flex flex-col lg:flex-row justify-between items-center text-sm"
         >
           <div
             class="container mx-auto px-4 py-4 flex items-center justify-between w-full"
@@ -129,12 +130,14 @@
                   class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
                 >
                   <!-- <i class="fas fa-phone-alt"></i> -->
-                    <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-whatsapp"></i>
                 </div>
                 <div>
-                  <div class="text-sm text-gray-400">Whatsapp </div>
+                  <div class="text-sm text-gray-400">Whatsapp</div>
                   <div class="font-bold text-light-text">
-                    <a href="https://wa.me/+966591513355" target="_blank">+966 59 151 3355</a>
+                    <a href="https://wa.me/+966591513355" target="_blank"
+                      >+966 59 151 3355</a
+                    >
                   </div>
                 </div>
               </div>
@@ -208,182 +211,268 @@
               class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
               >Our Blog</a
             >
+            <!-- Hotline (Mobile) -->
+            <div class="flex items-center space-x-2 mt-12">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <div class="text-sm text-gray-400">Whatsapp</div>
+                <div class="font-bold text-light-text">
+                  <a href="https://wa.me/+966591513355" target="_blank"
+                    >+966 59 151 3355</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <!-- Background -->
-      <div class="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-          alt="Construction Site" class="w-full h-full object-cover opacity-60">
-        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60"></div>
-      </div>
-
-      <!-- Floating Elements -->
-      <div class="absolute top-20 left-10 text-yellow-400 text-4xl float-slow opacity-20">
-        <i class="fas fa-hard-hat"></i>
-      </div>
-      <div class="absolute top-40 right-20 text-orange-400 text-3xl float-medium opacity-20">
-        <i class="fas fa-hammer"></i>
-      </div>
-      <div class="absolute bottom-40 left-20 text-yellow-400 text-5xl float-fast opacity-20">
-        <i class="fas fa-building"></i>
-      </div>
-
-      <!-- Hero Content -->
-      <div class="relative z-10 text-center max-w-6xl mx-auto px-6">
-        <div
-          class="pulse-ring w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-8 mt-32">
-          <i class="fas fa-tools text-3xl text-black"></i>
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen flex items-center justify-center overflow-hidden"
+      >
+        <!-- Background -->
+        <div class="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Construction Site"
+            class="w-full h-full object-cover opacity-60"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60"
+          ></div>
         </div>
 
-        <h1 class="hero-text-gradient font-playfair text-[24px] sm:text-5xl font-bold mb-6 leading-tight">
-          Construction & Maintenance
-        </h1>
+        <!-- Floating Elements -->
+        <div
+          class="absolute top-20 left-10 text-yellow-400 text-4xl float-slow opacity-20"
+        >
+          <i class="fas fa-hard-hat"></i>
+        </div>
+        <div
+          class="absolute top-40 right-20 text-orange-400 text-3xl float-medium opacity-20"
+        >
+          <i class="fas fa-hammer"></i>
+        </div>
+        <div
+          class="absolute bottom-40 left-20 text-yellow-400 text-5xl float-fast opacity-20"
+        >
+          <i class="fas fa-building"></i>
+        </div>
 
-        <p class="text-[16px] md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto font-light leading-relaxed">
-          We engineer durable and efficient structures that meet global standards and local requirements. Our
-          construction division is backed by expert architects, civil engineers, and project managers who ensure safety,
-          cost-efficiency, and timely delivery.
-        </p>
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center max-w-6xl mx-auto px-6">
+          <div
+            class="pulse-ring w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-8 mt-32"
+          >
+            <i class="fas fa-tools text-3xl text-black"></i>
+          </div>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
-          <a href="index.html#contact"
-            class="inline-block bg-orange-500 text-[13px] text-black font-bold py-3 px-8 rounded-full hover:bg-orange-600 shadow-lg uppercase tracking-wide">
-            Start Your Project
-          </a>
-          <!-- <button
+          <h1
+            class="hero-text-gradient font-playfair text-[24px] sm:text-5xl font-bold mb-6 leading-tight"
+          >
+            Construction & Maintenance
+          </h1>
+
+          <p
+            class="text-[16px] md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto font-light leading-relaxed"
+          >
+            We engineer durable and efficient structures that meet global
+            standards and local requirements. Our construction division is
+            backed by expert architects, civil engineers, and project managers
+            who ensure safety, cost-efficiency, and timely delivery.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16"
+          >
+            <a
+              href="index.html#contact"
+              class="inline-block bg-orange-500 text-[13px] text-black font-bold py-3 px-8 rounded-full hover:bg-orange-600 shadow-lg uppercase tracking-wide"
+            >
+              Start Your Project
+            </a>
+            <!-- <button
             class="text-white border-2 text-[13px] border-white hover:bg-white hover:text-black transition-all duration-300 px-8 py-4 rounded-full font-medium">
             <i class="fas fa-play mr-2"></i>
             View Our Work
           </button> -->
-        </div>
+          </div>
 
-        <!-- Stats -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div class="text-center">
-            <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">500+</div>
-            <div class="text-gray-400 font-medium">Projects Completed</div>
-          </div>
-          <div class="text-center">
-            <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">15+</div>
-            <div class="text-gray-400 font-medium">Years Experience</div>
-          </div>
-          <div class="text-center">
-            <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">98%</div>
-            <div class="text-gray-400 font-medium">Client Satisfaction</div>
-          </div>
-          <div class="text-center">
-            <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">3</div>
-            <div class="text-gray-400 font-medium">Countries</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="py-20 relative">
-      <div class="container mx-auto px-6">
-        <!-- Section Header -->
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-1">
-      <div class="container mx-auto px-6">
-        <div class="luxury-card rounded-3xl p-12">
-          <div class="text-center mb-16">
-            <div
-              class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full mb-6 pulse-ring">
-              <i class="fas fa-star text-2xl text-black"></i>
-            </div>
-            <h2 class="text-[24px] sm:text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
-              Our Specialties Include
-            </h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="feature-item p-6 rounded-xl">
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-drafting-compass text-yellow-400 text-2xl"></i>
-                <span class="text-[14px] sm:text-[17px] text-white font-medium">Civil & Structural Works (RCC, Steel Structures,
-                  PEBs)</span>
-              </div>
-            </div>
-            <div class="feature-item p-6 rounded-xl">
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-home text-yellow-400 text-2xl"></i>
-                <span class="text-[14px] sm:text-[17px] text-white font-medium">Residential Villas, Commercial Complexes & Industrial
-                  Units</span>
-              </div>
-            </div>
-            <div class="feature-item p-6 rounded-xl">
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-paint-roller text-yellow-400 text-2xl"></i>
-                <span class="text-[14px] sm:text-[17px] text-white font-medium">Interior Fit-outs, Renovation & Expansion Projects</span>
-              </div>
-            </div>
-            <div class="feature-item p-6 rounded-xl">
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-plug text-yellow-400 text-2xl"></i>
-                <span class="text-[14px] sm:text-[17px] text-white font-medium">MEP Services: Electrical, Plumbing, HVAC</span>
-              </div>
-            </div>
-            <div class="feature-item p-6 rounded-xl">
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-tint text-yellow-400 text-2xl"></i>
-                <span class="text-[14px] sm:text-[17px] text-white font-medium">Waterproofing, Tiling, Painting & General Repairs</span>
-              </div>
-            </div>
-            <div class="feature-item p-6 rounded-xl">
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-wrench text-yellow-400 text-2xl"></i>
-                <span class="text-[14px] sm:text-[17px] text-white font-medium">AMC (Annual Maintenance Contracts) & On-call
-                  Services</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Value Proposition -->
-    <section class="py-20">
-      <div class="container mx-auto px-6">
-        <div class="value-card rounded-3xl p-12 text-center">
-          <div class="flex justify-center mb-6">
-            <div
-              class="w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center pulse-ring">
-              <i class="fas fa-cog text-3xl text-black"></i>
-            </div>
-          </div>
-          <h3 class="text-[24px] sm:text-4xl font-playfair font-bold text-white mb-6">KeyAdvantage</h3>
-          <p class="text-[16px] sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            A fully integrated construction and maintenance solution — no handover gaps, full lifecycle support.
-            We handle everything from foundation to finishing, ensuring consistent quality throughout.
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Stats -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="text-center">
-              <i class="fas fa-shield-alt text-4xl text-yellow-400 mb-4 float-slow"></i>
-              <h4 class="text-xl font-bold text-white mb-2">Safety First</h4>
-              <p class="text-gray-400">Global safety standards in every project</p>
+              <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                500+
+              </div>
+              <div class="text-gray-400 font-medium">Projects Completed</div>
             </div>
             <div class="text-center">
-              <i class="fas fa-clock text-4xl text-yellow-400 mb-4 float-medium"></i>
-              <h4 class="text-xl font-bold text-white mb-2">Timely Delivery</h4>
-              <p class="text-gray-400">On-schedule completion guaranteed</p>
+              <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                15+
+              </div>
+              <div class="text-gray-400 font-medium">Years Experience</div>
             </div>
             <div class="text-center">
-              <i class="fas fa-handshake text-4xl text-yellow-400 mb-4 float-fast"></i>
-              <h4 class="text-xl font-bold text-white mb-2">Full Support</h4>
-              <p class="text-gray-400">Complete lifecycle maintenance</p>
+              <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                98%
+              </div>
+              <div class="text-gray-400 font-medium">Client Satisfaction</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                3
+              </div>
+              <div class="text-gray-400 font-medium">Countries</div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Services Section -->
+      <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+          <!-- Section Header -->
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-1">
+        <div class="container mx-auto px-6">
+          <div class="luxury-card rounded-3xl p-12">
+            <div class="text-center mb-16">
+              <div
+                class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full mb-6 pulse-ring"
+              >
+                <i class="fas fa-star text-2xl text-black"></i>
+              </div>
+              <h2
+                class="text-[24px] sm:text-4xl md:text-5xl font-playfair font-bold text-white mb-4"
+              >
+                Our Specialties Include
+              </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="feature-item p-6 rounded-xl">
+                <div class="flex items-center space-x-4">
+                  <i
+                    class="fas fa-drafting-compass text-yellow-400 text-2xl"
+                  ></i>
+                  <span
+                    class="text-[14px] sm:text-[17px] text-white font-medium"
+                    >Civil & Structural Works (RCC, Steel Structures,
+                    PEBs)</span
+                  >
+                </div>
+              </div>
+              <div class="feature-item p-6 rounded-xl">
+                <div class="flex items-center space-x-4">
+                  <i class="fas fa-home text-yellow-400 text-2xl"></i>
+                  <span
+                    class="text-[14px] sm:text-[17px] text-white font-medium"
+                    >Residential Villas, Commercial Complexes & Industrial
+                    Units</span
+                  >
+                </div>
+              </div>
+              <div class="feature-item p-6 rounded-xl">
+                <div class="flex items-center space-x-4">
+                  <i class="fas fa-paint-roller text-yellow-400 text-2xl"></i>
+                  <span
+                    class="text-[14px] sm:text-[17px] text-white font-medium"
+                    >Interior Fit-outs, Renovation & Expansion Projects</span
+                  >
+                </div>
+              </div>
+              <div class="feature-item p-6 rounded-xl">
+                <div class="flex items-center space-x-4">
+                  <i class="fas fa-plug text-yellow-400 text-2xl"></i>
+                  <span
+                    class="text-[14px] sm:text-[17px] text-white font-medium"
+                    >MEP Services: Electrical, Plumbing, HVAC</span
+                  >
+                </div>
+              </div>
+              <div class="feature-item p-6 rounded-xl">
+                <div class="flex items-center space-x-4">
+                  <i class="fas fa-tint text-yellow-400 text-2xl"></i>
+                  <span
+                    class="text-[14px] sm:text-[17px] text-white font-medium"
+                    >Waterproofing, Tiling, Painting & General Repairs</span
+                  >
+                </div>
+              </div>
+              <div class="feature-item p-6 rounded-xl">
+                <div class="flex items-center space-x-4">
+                  <i class="fas fa-wrench text-yellow-400 text-2xl"></i>
+                  <span
+                    class="text-[14px] sm:text-[17px] text-white font-medium"
+                    >AMC (Annual Maintenance Contracts) & On-call Services</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Value Proposition -->
+      <section class="py-20">
+        <div class="container mx-auto px-6">
+          <div class="value-card rounded-3xl p-12 text-center">
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center pulse-ring"
+              >
+                <i class="fas fa-cog text-3xl text-black"></i>
+              </div>
+            </div>
+            <h3
+              class="text-[24px] sm:text-4xl font-playfair font-bold text-white mb-6"
+            >
+              KeyAdvantage
+            </h3>
+            <p
+              class="text-[16px] sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
+            >
+              A fully integrated construction and maintenance solution — no
+              handover gaps, full lifecycle support. We handle everything from
+              foundation to finishing, ensuring consistent quality throughout.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="text-center">
+                <i
+                  class="fas fa-shield-alt text-4xl text-yellow-400 mb-4 float-slow"
+                ></i>
+                <h4 class="text-xl font-bold text-white mb-2">Safety First</h4>
+                <p class="text-gray-400">
+                  Global safety standards in every project
+                </p>
+              </div>
+              <div class="text-center">
+                <i
+                  class="fas fa-clock text-4xl text-yellow-400 mb-4 float-medium"
+                ></i>
+                <h4 class="text-xl font-bold text-white mb-2">
+                  Timely Delivery
+                </h4>
+                <p class="text-gray-400">On-schedule completion guaranteed</p>
+              </div>
+              <div class="text-center">
+                <i
+                  class="fas fa-handshake text-4xl text-yellow-400 mb-4 float-fast"
+                ></i>
+                <h4 class="text-xl font-bold text-white mb-2">Full Support</h4>
+                <p class="text-gray-400">Complete lifecycle maintenance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Footer -->
       <div class="bg-dark-bg pt-16">
@@ -559,9 +648,8 @@
           <p>Copyright © Grace Arabia. All Right Reserved</p>
         </div>
       </div>
-  </div>
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="./assets/js/construction.js"></script>
-</body>
-
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/construction.js"></script>
+  </body>
 </html>

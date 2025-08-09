@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flyonui@1.1.1/dist/flyonui.css"
+    />
     <!-- AOS Animate on Scroll Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/style.css" />
@@ -37,15 +41,16 @@
     <!-- Main Content Container -->
     <div id="main-content" class="content">
       <!-- Main Navigation Bar -->
+
       <nav class="header-main fixed top-0 z-50 shadow-md w-full bg-[#111315]">
         <div
-          class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm"
+          class="container mx-auto flex flex-col lg:flex-row justify-between items-center text-sm"
         >
           <div
             class="container mx-auto px-4 py-4 flex items-center justify-between w-full"
           >
             <!-- Logo -->
-            <a href="#home" class="flex items-center space-x-2">
+            <a href="index.html#home" class="flex items-center space-x-2">
               <img
                 src="./assets/images/logo.png"
                 alt="Grace Arabia Logo"
@@ -61,7 +66,7 @@
                 >Home</a
               >
               <a
-                href="#about"
+                href="index.html#about"
                 class="page-link text-light-text font-semibold transition-colors"
                 >About Us</a
               >
@@ -69,7 +74,7 @@
               <!-- Dropdown -->
               <div class="relative group">
                 <a
-                  href="#division"
+                  href="#"
                   class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
                 >
                   Division
@@ -106,12 +111,12 @@
                 </div>
               </div>
               <a
-                href="#our-services"
+                href="index.html#our-services"
                 class="page-link text-light-text font-semibold transition-colors"
                 >Our Services</a
               >
               <a
-                href="#contact"
+                href="index.html#contact"
                 class="page-link text-light-text font-semibold transition-colors"
                 >Contact</a
               >
@@ -129,12 +134,14 @@
                   class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
                 >
                   <!-- <i class="fas fa-phone-alt"></i> -->
-                    <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-whatsapp"></i>
                 </div>
                 <div>
-                  <div class="text-sm text-gray-400">Whatsapp </div>
+                  <div class="text-sm text-gray-400">Whatsapp</div>
                   <div class="font-bold text-light-text">
-                    <a href="https://wa.me/+966591513355" target="_blank">+966 59 151 3355</a>
+                    <a href="https://wa.me/+966591513355" target="_blank"
+                      >+966 59 151 3355</a
+                    >
                   </div>
                 </div>
               </div>
@@ -208,6 +215,22 @@
               class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
               >Our Blog</a
             >
+            <!-- Hotline (Mobile) -->
+            <div class="flex items-center space-x-2 mt-12">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <div class="text-sm text-gray-400">Whatsapp</div>
+                <div class="font-bold text-light-text">
+                  <a href="https://wa.me/+966591513355" target="_blank"
+                    >+966 59 151 3355</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -243,7 +266,7 @@
                   Welcome to Grace Arabia
                 </div>
                 <h1
-                  class="text-[28px] sm:text-4xl  font-extrabold leading-tight text-light-text mb-6"
+                  class="text-[28px] sm:text-4xl font-extrabold leading-tight text-light-text mb-6"
                 >
                   Your Partner in
                   <span class="text-accent-orange accent-orange"
@@ -261,10 +284,11 @@
                   smart, sustainable, and scalable solutions.
                 </p>
                 <div
-                class="flex flex-col text-[13px] sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16"
-              >
+                  class="flex flex-col text-[13px] sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16"
+                >
                   <a href="#our-services" class="btn-services">
-                    EXPLORE OUR SERVICES <span class="arrow text-[20px]">&rarr;</span>
+                    EXPLORE OUR SERVICES
+                    <span class="arrow text-[20px]">&rarr;</span>
                   </a>
                 </div>
               </div>
@@ -335,7 +359,7 @@
 
               <!-- Right Image Content -->
               <div
-                class="lg:w-[790px] lg:h-[500px] flex justify-center lg:justify-center "
+                class="lg:w-[790px] lg:h-[500px] flex justify-center lg:justify-center"
                 data-aos="fade-left"
               >
                 <img
@@ -347,7 +371,9 @@
             </div>
 
             <div class="mt-16" data-aos="fade-up">
-              <h3 class="text-[26px] sm:text-3xl font-bold text-light-text text-center mb-8">
+              <h3
+                class="text-[26px] sm:text-3xl font-bold text-light-text text-center mb-8"
+              >
                 Our Divisions
               </h3>
               <ul class="space-y-6 text-gray-300 max-w-2xl mx-auto">
@@ -456,7 +482,7 @@
               class="flex flex-col lg:flex-row items-center justify-between mb-12"
             >
               <h2
-                class="text-[26px] sm:text-3xl font-bold text-light-text text-center lg:text-left"
+                class="text-[26px] sm:text-3xl font-bold text-light-text text-center lg:text-left mt-8"
                 data-aos="zoom-in"
               >
                 Our Services
@@ -805,6 +831,9 @@
     </div>
 
     <!-- JavaScript for Mobile Menu and Page Navigation -->
+    <!-- Include FlyonUI JS -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flyonui@1.1.1/dist/flyonui.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets//script.js"></script>
   </body>

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // flyonui.init();
   const navbarToggle = document.getElementById("navbar-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
   const allSections = document.querySelectorAll("main > section");
@@ -11,6 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navbarToggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+  });
+  const menuToggle = document.getElementById("navbar-toggle");
+  const menu = document.getElementById("menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menuIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
   });
 
   // Smooth scrolling for navigation links
@@ -104,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("mobile-menu").classList.add("translate-x-full");
   };
 
-
   const toggleBtn = document.getElementById("navbar-toggle");
   const bar1 = document.getElementById("bar1");
   const bar2 = document.getElementById("bar2");
@@ -116,28 +126,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let menuOpen = false;
 
-  toggleBtn.addEventListener("click", () => {
-    menuOpen = !menuOpen;
-    mobileMenu.classList.toggle("translate-x-full");
+  //   toggleBtn.addEventListener("click", () => {
+  //     menuOpen = !menuOpen;
+  //     mobileMenu.classList.toggle("translate-x-full");
 
-    // Animate hamburger to X
-    if (menuOpen) {
-      bar1.classList.add("rotate-45", "translate-y-1.5");
-      bar2.classList.add("opacity-0");
-      bar3.classList.add("-rotate-45", "-translate-y-1.5");
-    } else {
-      bar1.classList.remove("rotate-45", "translate-y-1.5");
-      bar2.classList.remove("opacity-0");
-      bar3.classList.remove("-rotate-45", "-translate-y-1.5");
-    }
-  });
+  //   // Animate hamburger to X
+  //   if (menuOpen) {
+  //     bar1.classList.add("rotate-45", "translate-y-1.5");
+  //     bar2.classList.add("opacity-0");
+  //     bar3.classList.add("-rotate-45", "-translate-y-1.5");
+  //   } else {
+  //     bar1.classList.remove("rotate-45", "translate-y-1.5");
+  //     bar2.classList.remove("opacity-0");
+  //     bar3.classList.remove("-rotate-45", "-translate-y-1.5");
+  //   }
+  // });
 
   // Dropdown toggle
-  dropdownBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    dropdownMenu.classList.toggle("hidden");
-    dropdownArrow.classList.toggle("rotate-180");
-  });
+  // dropdownBtn.addEventListener("click", (e) => {
+  //   e.preventDefault();
+  //   dropdownMenu.classList.toggle("hidden");
+  //   dropdownArrow.classList.toggle("rotate-180");
+  // });
 
   // Close dropdown if click outside
   document.addEventListener("click", (e) => {
@@ -147,3 +157,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   const mobileToggle = document.getElementById('ga-mobile-toggle');
+    //   const mobileNav = document.getElementById('ga-mobile-nav');
+    //   const menuIcon = document.getElementById('ga-menu-icon');
+    //   const closeIcon = document.getElementById('ga-close-icon');
+
+    //   const divisionBtn = document.getElementById('ga-mobile-division-btn');
+    //   const divisionContent = document.getElementById('ga-mobile-division');
+    //   const divisionArrow = document.getElementById('ga-mobile-division-arrow');
+
+    //   // mobile toggle
+    //   mobileToggle.addEventListener('click', () => {
+    //     mobileNav.classList.toggle('hidden');
+    //     menuIcon.classList.toggle('hidden');
+    //     closeIcon.classList.toggle('hidden');
+    //     const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+    //     mobileToggle.setAttribute('aria-expanded', (!expanded).toString());
+    //   });
+
+    //   // mobile division collapse
+    //   divisionBtn.addEventListener('click', () => {
+    //     divisionContent.classList.toggle('hidden');
+    //     const open = !divisionContent.classList.contains('hidden');
+    //     divisionBtn.setAttribute('aria-expanded', open.toString());
+    //     divisionArrow.style.transform = open ? 'rotate(180deg)' : 'rotate(0deg)';
+    //   });
+
+    //   // optional: close mobile menu if click outside (small helper)
+    //   document.addEventListener('click', (e) => {
+    //     if (!mobileNav.contains(e.target) && !mobileToggle.contains(e.target) && !mobileNav.classList.contains('hidden')) {
+    //       // close
+    //       mobileNav.classList.add('hidden');
+    //       menuIcon.classList.remove('hidden');
+    //       closeIcon.classList.add('hidden');
+    //       mobileToggle.setAttribute('aria-expanded','false');
+    //     }
+    //   });
+    // });
