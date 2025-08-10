@@ -196,3 +196,48 @@ document.addEventListener("DOMContentLoaded", () => {
     //     }
     //   });
     // });
+
+
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+    
+      const form = e.target;
+      const formData = new FormData(form);
+      const messageBox = document.getElementById("formMessage");
+      const submitBtn = document.getElementById("submitBtn");
+      const btnText = document.getElementById("btnText");
+      const btnSpinner = document.getElementById("btnSpinner");
+    
+      // Show loader
+      btnText.textContent = "Sending...";
+      btnSpinner.classList.remove("hidden");
+      submitBtn.disabled = true;
+    
+      fetch("http://54.242.3.123:8000/sendmail.php", {
+          method: "POST",
+          body: formData
+      })
+      .then(response => response.text())
+      .then(result => {
+          messageBox.textContent = result;
+          messageBox.className = "text-green-600 text-sm mt-4 md:col-span-2";
+    
+          form.reset(); // Clear form
+    
+          // Reset UI after 2 seconds
+          setTimeout(() => {
+              messageBox.textContent = "";
+          }, 2000);
+      })
+      .catch(error => {
+          messageBox.textContent = "Something went wrong. Please try again.";
+          messageBox.className = "text-red-600 text-sm mt-4 md:col-span-2";
+      })
+      .finally(() => {
+          // Hide loader and re-enable button
+          btnText.textContent = "SEND NOW";
+          btnSpinner.classList.add("hidden");
+          submitBtn.disabled = false;
+      });
+    });

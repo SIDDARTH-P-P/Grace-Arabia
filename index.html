@@ -28,15 +28,24 @@
     <style></style>
   </head>
   <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-      <div class="luxury-loader">
-        <div class="loader-ring"></div>
-        <div class="loader-ring"></div>
-        <div class="loader-ring"></div>
-      </div>
-      <div class="loading-text font-playfair">GRACE ARABIA</div>
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="luxury-loader">
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <!-- Option 1: Use an image logo (uncomment and add your logo URL) -->
+      <!-- <img src="your-logo-url-here.png" alt="Grace Arabia Logo"> -->
+
+      <!-- Option 2: Fallback with initials (remove when using image) -->
+      <div class="logo-fallback"><img src="./assets/images/loading-logo.png" alt="" width="70px" height="70px"></div>
     </div>
+  </div>
+  <div class="loading-text font-playfair">GRACE ARABIA</div>
+</div>
 
     <!-- Main Content Container -->
     <div id="main-content" class="content">
@@ -609,26 +618,32 @@
               </div>
 
               <!-- Right Form -->
-              <div class="lg:w-1/2">
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input type="text" placeholder="Name *" class="form-input" />
-                  <input
-                    type="email"
-                    placeholder="E-mail *"
-                    class="form-input"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone *"
-                    class="form-input md:col-span-1"
-                  />
-                  <button
-                    type="submit"
-                    class="form-btn-blue hover:bg-blue-600 md:col-span-1"
-                  >
-                    SEND NOW
+              <div class="lg:w-3/1 md:col-span-2 flex flex-col items-center">
+
+                <form id="contactForm" class="grid grid-cols-1 md:grid-cols-5 gap-4 lg:w-3/1" action="send.php" method="POST">
+              
+                  <!-- Left inputs column (3/5 of the width) -->
+                  <div class="flex flex-col space-y-4 md:col-span-2">
+                    <input type="text" name="name" placeholder="Name *" class="form-input" required />
+                    <input type="email" name="email" placeholder="E-mail *" class="form-input" required />
+                    <input type="tel" name="phone" placeholder="Phone *" class="form-input" required />
+                  </div>
+              
+                  <!-- Right message textarea (3 columns wide, so wider) -->
+                  <textarea name="message" placeholder="Your Message *" class="form-input resize-none md:col-span-3" rows="6" required></textarea>
+              
+                  <!-- Button: full width below -->
+                  <button type="submit" id="submitBtn" class="form-btn-blue hover:bg-blue-600 md:col-span-5 flex items-center justify-center gap-2 mt-4">
+                    <span id="btnText">SEND NOW</span>
+                    <svg id="btnSpinner" class="animate-spin hidden h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                    </svg>
                   </button>
                 </form>
+              
+                <div id="formMessage" class="text-sm mt-4 text-center text-green-600"></div>
+              
               </div>
             </div>
           </div>
@@ -724,13 +739,13 @@
                 Quick Links
               </h4>
               <ul class="space-y-2 footer-nav">
-                <li>
+                <!-- <li>
                   <a
                     href="#"
                     class="text-gray-400 hover:text-white transition-colors"
                     >Pricing</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a
                     href="#"
@@ -759,7 +774,7 @@
               <h4 class="text-xl font-bold text-light-text mb-6">
                 Social media
               </h4>
-              <div class="flex items-center space-x-4 mt-6">
+              <!-- <div class="flex items-center space-x-4 mt-6">
                 <a
                   href="#"
                   class="social-icon-dark hover:text-white transition-colors"
@@ -780,7 +795,7 @@
                   class="social-icon-dark hover:text-white transition-colors"
                   ><i class="fab fa-pinterest-p text-2xl"></i
                 ></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
