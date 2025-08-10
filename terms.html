@@ -12,7 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="icon" href="./assets/images/loading-logo.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./assets/images/loading-logo.png"
+      type="image/x-icon"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,22 +32,28 @@
 
   <body class="bg-gray-900 text-white font-inter">
     <div id="loading-screen">
-        <div class="luxury-loader">
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
+      <div class="luxury-loader">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
 
-            <!-- Logo Container -->
-            <div class="logo-container">
-                <!-- Option 1: Use an image logo (uncomment and add your logo URL) -->
-                <!-- <img src="your-logo-url-here.png" alt="Grace Arabia Logo"> -->
+        <!-- Logo Container -->
+        <div class="logo-container">
+          <!-- Option 1: Use an image logo (uncomment and add your logo URL) -->
+          <!-- <img src="your-logo-url-here.png" alt="Grace Arabia Logo"> -->
 
-                <!-- Option 2: Fallback with initials (remove when using image) -->
-                <div class="logo-fallback"><img src="./assets/images/loading-logo.png" alt="" width="70px"
-                        height="70px"></div>
-            </div>
+          <!-- Option 2: Fallback with initials (remove when using image) -->
+          <div class="logo-fallback">
+            <img
+              src="./assets/images/loading-logo.png"
+              alt=""
+              width="70px"
+              height="70px"
+            />
+          </div>
         </div>
-        <div class="loading-text font-playfair">GRACE ARABIA</div>
+      </div>
+      <div class="loading-text font-playfair">GRACE ARABIA</div>
     </div>
     <!-- Scroll Progress -->
     <div class="scroll-progress">
@@ -51,166 +61,276 @@
     </div>
 
     <!-- Floating Terms Icons -->
-    <div class="floating-icon top-20 left-10 text-orange-400 text-4xl lg:text-5xl">
+    <div
+      class="floating-icon top-20 left-10 text-orange-400 text-4xl lg:text-5xl"
+    >
       <i class="fas fa-file-contract"></i>
     </div>
-    <div class="floating-icon top-40 right-20 text-blue-400 text-3xl lg:text-4xl">
+    <div
+      class="floating-icon top-40 right-20 text-blue-400 text-3xl lg:text-4xl"
+    >
       <i class="fas fa-balance-scale"></i>
     </div>
-    <div class="floating-icon bottom-40 left-20 text-green-400 text-4xl lg:text-6xl">
+    <div
+      class="floating-icon bottom-40 left-20 text-green-400 text-4xl lg:text-6xl"
+    >
       <i class="fas fa-handshake"></i>
     </div>
-    <div class="floating-icon top-60 right-40 text-purple-400 text-3xl lg:text-5xl">
+    <div
+      class="floating-icon top-60 right-40 text-purple-400 text-3xl lg:text-5xl"
+    >
       <i class="fas fa-gavel"></i>
     </div>
-    <div class="floating-icon bottom-60 right-10 text-yellow-500 text-2xl lg:text-4xl">
+    <div
+      class="floating-icon bottom-60 right-10 text-yellow-500 text-2xl lg:text-4xl"
+    >
       <i class="fas fa-clipboard-check"></i>
     </div>
-    <div class="floating-icon top-80 left-32 text-pink-400 text-3xl lg:text-5xl">
+    <div
+      class="floating-icon top-80 left-32 text-pink-400 text-3xl lg:text-5xl"
+    >
       <i class="fas fa-stamp"></i>
     </div>
-    <div class="floating-icon bottom-80 right-32 text-indigo-400 text-2xl lg:text-4xl">
+    <div
+      class="floating-icon bottom-80 right-32 text-indigo-400 text-2xl lg:text-4xl"
+    >
       <i class="fas fa-edit"></i>
     </div>
 
     <nav class="header-main fixed top-0 z-50 shadow-md w-full bg-[#111315]">
-        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center text-sm">
-            <div class="container mx-auto px-4 py-4 flex items-center justify-between w-full">
-                <!-- Logo -->
-                <a href="index.html#home" class="flex items-center space-x-2">
-                    <img src="./assets/images/logo.png" alt="Grace Arabia Logo" class="h-14" />
+      <div
+        class="container mx-auto flex flex-col lg:flex-row justify-between items-center text-sm"
+      >
+        <div
+          class="container mx-auto px-4 py-4 flex items-center justify-between w-full"
+        >
+          <!-- Logo -->
+          <a href="index.html#home" class="flex items-center space-x-2">
+            <img
+              src="./assets/images/logo.png"
+              alt="Grace Arabia Logo"
+              class="h-14"
+            />
+          </a>
+
+          <!-- Desktop Nav Links -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="page-link text-light-text font-semibold transition-colors"
+              >Home</a
+            >
+            <a
+              href="index.html#about"
+              class="page-link text-light-text font-semibold transition-colors"
+              >About Us</a
+            >
+
+            <!-- Dropdown -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
+              >
+                Division
+                <i class="fas fa-chevron-down text-sm mt-0.5"></i>
+              </a>
+              <div
+                style="background-color: #161414"
+                class="absolute left-0 mt-3 w-56 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50"
+              >
+                <a
+                  href="construction.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Construction & Maintenance
                 </a>
-
-                <!-- Desktop Nav Links -->
-                <div class="hidden lg:flex items-center space-x-8">
-                    <a href="index.html" class="page-link text-light-text font-semibold transition-colors">Home</a>
-                    <a href="index.html#about" class="page-link text-light-text font-semibold transition-colors">About
-                        Us</a>
-
-                    <!-- Dropdown -->
-                    <div class="relative group">
-                        <a href="#"
-                            class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1">
-                            Division
-                            <i class="fas fa-chevron-down text-sm mt-0.5"></i>
-                        </a>
-                        <div style="background-color: #161414"
-                            class="absolute left-0 mt-3 w-56 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                            <a href="construction.html"
-                                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
-                                Construction & Maintenance
-                            </a>
-                            <a href="trading.html"
-                                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
-                                Trading Division
-                            </a>
-                            <a href="digital-marketing.html"
-                                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
-                                Digital Marketing
-                            </a>
-                            <a href="interior-design.html"
-                                class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200">
-                                Interior Designing
-                            </a>
-                        </div>
-                    </div>
-                    <a href="index.html#our-services"
-                        class="page-link text-light-text font-semibold transition-colors">Our Services</a>
-                    <a href="index.html#contact"
-                        class="page-link text-light-text font-semibold transition-colors">Contact</a>
-                    <a href="#blog"
-                        class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1">Our
-                        Blog</a>
-                </div>
-
-                <!-- Hotline and Mobile Menu -->
-                <div class="flex items-center space-x-4">
-                    <div class="hidden lg:flex items-center space-x-2">
-                        <div
-                            class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full">
-                            <!-- <i class="fas fa-phone-alt"></i> -->
-                            <i class="fab fa-whatsapp" style="font-size: 25px; margin-left: 30px;"></i>
-                        </div>
-                        <div>
-                            <div class="text-sm text-gray-400">Whatsapp</div>
-                            <div class="font-bold text-light-text">
-                                <a href="https://wa.me/+966591513355" target="_blank">+966 59 151 3355</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button id="navbar-toggle"
-                        class="lg:hidden w-12 h-12 text-light-text hover:text-accent-orange focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
+                <a
+                  href="trading.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Trading Division
+                </a>
+                <a
+                  href="digital-marketing.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Digital Marketing
+                </a>
+                <a
+                  href="interior-design.html"
+                  class="block px-4 py-3 text-light-text hover:bg-accent-orange hover:text-gray-600 transition duration-200"
+                >
+                  Interior Designing
+                </a>
+              </div>
             </div>
+            <a
+              href="index.html#our-services"
+              class="page-link text-light-text font-semibold transition-colors"
+              >Our Services</a
+            >
+            <a
+              href="index.html#contact"
+              class="page-link text-light-text font-semibold transition-colors"
+              >Contact</a
+            >
+            <a
+              href="#blog"
+              class="page-link text-light-text font-semibold transition-colors bg-accent-orange flex items-center gap-1"
+              >Our Blog</a
+            >
+          </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" style="background-color: #1b1c1f"
-                class="hidden lg:hidden w-full px-4 pb-4 bg-dark-header-bg font-semibold shadow-lg space-y-2">
-                <a href="index.html#home" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Home</a>
-                <a href="index.html#about" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">About
-                    Us</a>
-
-                <!-- Mobile Dropdown for Division -->
-                <div>
-                    <span class="block py-2 px-4 text-light-text font-semibold">Division</span>
-                    <div class="pl-4 space-y-1">
-                        <a href="construction.html"
-                            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Construction &
-                            Maintenance</a>
-                        <a href="trading.html" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Trading
-                            Division</a>
-                        <a href="digital-marketing.html"
-                            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Digital Marketing</a>
-                        <a href="interior-design.html"
-                            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Interior Designing</a>
-                    </div>
+          <!-- Hotline and Mobile Menu -->
+          <div class="flex items-center space-x-4">
+            <div class="hidden lg:flex items-center space-x-2">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
+              >
+                <!-- <i class="fas fa-phone-alt"></i> -->
+                <i
+                  class="fab fa-whatsapp"
+                  style="font-size: 25px; margin-left: 30px"
+                ></i>
+              </div>
+              <div>
+                <div class="text-sm text-gray-400">Whatsapp</div>
+                <div class="font-bold text-light-text">
+                  <a href="https://wa.me/+966591513355" target="_blank"
+                    >+966 59 151 3355</a
+                  >
                 </div>
-
-                <a href="index.html#our-services" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Our
-                    Services</a>
-                <a href="index.html#contact"
-                    class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Contact</a>
-                <a href="#blog" class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded">Our Blog</a>
-                <!-- Hotline (Mobile) -->
-                <div class="flex items-center space-x-2 mt-12">
-                    <div class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <div>
-                        <div class="text-sm text-gray-400">Whatsapp</div>
-                        <div class="font-bold text-light-text">
-                            <a href="https://wa.me/+966591513355" target="_blank">+966 59 151 3355</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <button
+              id="navbar-toggle"
+              class="lg:hidden w-12 h-12 text-light-text hover:text-accent-orange focus:outline-none"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
         </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          style="background-color: #1b1c1f"
+          class="hidden lg:hidden w-full px-4 pb-4 bg-dark-header-bg font-semibold shadow-lg space-y-2"
+        >
+          <a
+            href="index.html#home"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >Home</a
+          >
+          <a
+            href="index.html#about"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >About Us</a
+          >
+
+          <!-- Mobile Dropdown for Division -->
+          <div>
+            <span class="block py-2 px-4 text-light-text font-semibold"
+              >Division</span
+            >
+            <div class="pl-4 space-y-1">
+              <a
+                href="construction.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Construction & Maintenance</a
+              >
+              <a
+                href="trading.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Trading Division</a
+              >
+              <a
+                href="digital-marketing.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Digital Marketing</a
+              >
+              <a
+                href="interior-design.html"
+                class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+                >Interior Designing</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="index.html#our-services"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >Our Services</a
+          >
+          <a
+            href="index.html#contact"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >Contact</a
+          >
+          <a
+            href="#blog"
+            class="block py-2 px-4 text-light-text hover:bg-gray-700 rounded"
+            >Our Blog</a
+          >
+          <!-- Hotline (Mobile) -->
+          <div class="flex items-center space-x-2 mt-12">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <div class="text-sm text-gray-400">Whatsapp</div>
+              <div class="font-bold text-light-text">
+                <a href="https://wa.me/+966591513355" target="_blank"
+                  >+966 59 151 3355</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    <section
+      class="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black"
+    >
       <!-- Animated particles -->
       <div class="hero-particles" id="heroParticles"></div>
-      
+
       <div class="absolute inset-0 bg-black opacity-40"></div>
-      
-      <div class="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
-        <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center mx-auto mb-8 icon-glow rotate-in">
-          <i class="fas fa-file-contract text-2xl sm:text-3xl lg:text-4xl text-black icon-bounce"></i>
+
+      <div
+        class="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20"
+      >
+        <div
+          class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center mx-auto mb-8 icon-glow rotate-in"
+        >
+          <i
+            class="fas fa-file-contract text-2xl sm:text-3xl lg:text-4xl text-black icon-bounce"
+          ></i>
         </div>
-        
-        <h1 class="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span class="gradient-text fade-in-up stagger-1">Terms &</span> 
+
+        <h1
+          class="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+        >
+          <span class="gradient-text fade-in-up stagger-1">Terms &</span>
           <span class="gradient-text fade-in-up stagger-2">Conditions</span>
         </h1>
-        
-        <p class="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed fade-in-up stagger-3">
-          Welcome to Grace Arabia. By browsing or using our website, you acknowledge and agree to be bound by these comprehensive terms and conditions.
+
+        <p
+          class="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed fade-in-up stagger-3"
+        >
+          Welcome to Grace Arabia. By browsing or using our website, you
+          acknowledge and agree to be bound by these comprehensive terms and
+          conditions.
         </p>
-        
-        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-gray-400 fade-in-up stagger-4">
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-gray-400 fade-in-up stagger-4"
+        >
           <div class="flex items-center space-x-2">
             <i class="fas fa-calendar-alt text-orange-400"></i>
             <span>Last Updated: January 2025</span>
@@ -228,25 +348,59 @@
         <!-- Quick navigation -->
         <div class="mt-12 fade-in-up stagger-5">
           <div class="flex flex-wrap justify-center gap-3">
-            <a href="#content-use" class="px-4 py-2 bg-orange-500 text-black rounded-full text-sm font-semibold hover:bg-orange-400 transition-all hover:scale-105">Content Use</a>
-            <a href="#no-guarantees" class="px-4 py-2 bg-gray-700 text-white rounded-full text-sm font-semibold hover:bg-gray-600 transition-all hover:scale-105">No Guarantees</a>
-            <a href="#external-links" class="px-4 py-2 bg-gray-700 text-white rounded-full text-sm font-semibold hover:bg-gray-600 transition-all hover:scale-105">External Links</a>
-            <a href="#liability" class="px-4 py-2 bg-gray-700 text-white rounded-full text-sm font-semibold hover:bg-gray-600 transition-all hover:scale-105">Liability</a>
+            <a
+              href="#content-use"
+              class="px-4 py-2 bg-orange-500 text-black rounded-full text-sm font-semibold hover:bg-orange-400 transition-all hover:scale-105"
+              >Content Use</a
+            >
+            <a
+              href="#no-guarantees"
+              class="px-4 py-2 bg-gray-700 text-white rounded-full text-sm font-semibold hover:bg-gray-600 transition-all hover:scale-105"
+              >No Guarantees</a
+            >
+            <a
+              href="#external-links"
+              class="px-4 py-2 bg-gray-700 text-white rounded-full text-sm font-semibold hover:bg-gray-600 transition-all hover:scale-105"
+              >External Links</a
+            >
+            <a
+              href="#liability"
+              class="px-4 py-2 bg-gray-700 text-white rounded-full text-sm font-semibold hover:bg-gray-600 transition-all hover:scale-105"
+              >Liability</a
+            >
           </div>
         </div>
       </div>
 
       <!-- Animated waves at bottom -->
       <div class="absolute bottom-0 left-0 w-full h-20 sm:h-32">
-        <svg class="relative block w-full h-full" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <svg
+          class="relative block w-full h-full"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
           <defs>
             <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color:#ff9500;stop-opacity:0.8" />
-              <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:0.6" />
-              <stop offset="100%" style="stop-color:#8B4513;stop-opacity:0.4" />
+              <stop
+                offset="0%"
+                style="stop-color: #ff9500; stop-opacity: 0.8"
+              />
+              <stop
+                offset="50%"
+                style="stop-color: #ff6b35; stop-opacity: 0.6"
+              />
+              <stop
+                offset="100%"
+                style="stop-color: #8b4513; stop-opacity: 0.4"
+              />
             </linearGradient>
           </defs>
-          <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="url(#waveGradient)"></path>
+          <path
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+            fill="url(#waveGradient)"
+          ></path>
         </svg>
       </div>
     </section>
@@ -255,72 +409,125 @@
     <section class="py-16 lg:py-24 relative">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="luxury-card rounded-2xl lg:rounded-3xl p-6 sm:p-8 lg:p-12">
-          
           <!-- Important Notice -->
-          <div class="warning-box rounded-xl p-6 lg:p-8 mb-8 fade-in-up stagger-1">
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 lg:w-14 lg:h-14 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-exclamation-triangle text-xl text-white"></i>
+          <div
+            class="warning-box rounded-xl p-6 lg:p-8 mb-8 fade-in-up stagger-1"
+          >
+            <div class="flex-col items-start space-x-4">
+              <div class="flex mb-4">
+                <div
+                  class="w-10 h-10 lg:w-14 lg:h-14 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="fas fa-exclamation-triangle text-lg lg:text-xl text-white"
+                  ></i>
+                </div>
+                <h3
+                  class="text-lg lg:text-2xl font-playfair pl-3 sm:pt-1.5 font-bold text-red-400"
+                >
+                  Important Legal Notice
+                </h3>
               </div>
+
               <div>
-                <h3 class="text-xl lg:text-2xl font-playfair font-bold text-red-400 mb-3">Important Legal Notice</h3>
+                <!-- <h3 class="text-xl lg:text-2xl font-playfair font-bold text-red-400 mb-3">Important Legal Notice</h3> -->
                 <p class="text-red-100 leading-relaxed text-base lg:text-lg">
-                  By accessing and using the Grace Arabia website, you automatically agree to these terms and conditions. If you do not agree with any part of these terms, please discontinue use of our website immediately.
+                  By accessing and using the Grace Arabia website, you
+                  automatically agree to these terms and conditions. If you do
+                  not agree with any part of these terms, please discontinue use
+                  of our website immediately.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Term 1: Use of Content -->
-          <div id="content-use" class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-left stagger-2">
+          <div
+            id="content-use"
+            class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-left stagger-2"
+          >
             <div class="flex items-start mb-6">
-              <div class="terms-number icon-pulse">1</div>
+              <!-- <div class="terms-number icon-pulse">1</div> -->
               <div class="flex-1">
                 <div class="flex items-center mb-4">
-                  <div class="w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-4 icon-glow">
-                    <i class="fas fa-copyright text-xl text-white"></i>
+                  <div
+                    class="w-10 h-10 lg:w-14 lg:h-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-4 icon-glow"
+                  >
+                    <i class="fas fa-copyright text-lg lg:xl text-white"></i>
                   </div>
-                  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-white">Use of Content</h2>
+                  <h2
+                    class="text-xl lg:text-4xl font-playfair font-bold text-white"
+                  >
+                    Use of Content
+                  </h2>
                 </div>
                 <div class="space-y-4">
                   <p class="text-gray-300 leading-relaxed text-base lg:text-lg">
-                    All content on this website, including but not limited to text, images, videos, graphics, logos, designs, and multimedia elements, is the exclusive intellectual property of Grace Arabia and is protected by copyright laws.
+                    All content on this website, including but not limited to
+                    text, images, videos, graphics, logos, designs, and
+                    multimedia elements, is the exclusive intellectual property
+                    of Grace Arabia and is protected by copyright laws.
                   </p>
-                  
+
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="feature-item">
                       <div class="flex items-start space-x-3">
                         <i class="fas fa-ban text-red-400 mt-1 text-lg"></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">Prohibited Actions</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">Unauthorized reproduction, distribution, or commercial use of our content</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            Prohibited Actions
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >Unauthorized reproduction, distribution, or
+                            commercial use of our content</span
+                          >
                         </div>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="flex items-start space-x-3">
-                        <i class="fas fa-shield-alt text-green-400 mt-1 text-lg"></i>
+                        <i
+                          class="fas fa-shield-alt text-green-400 mt-1 text-lg"
+                        ></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">Protected Elements</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">Logos, trademarks, trade names, and proprietary information</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            Protected Elements
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >Logos, trademarks, trade names, and proprietary
+                            information</span
+                          >
                         </div>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="flex items-start space-x-3">
-                        <i class="fas fa-gavel text-orange-400 mt-1 text-lg"></i>
+                        <i
+                          class="fas fa-gavel text-orange-400 mt-1 text-lg"
+                        ></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">Legal Action</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">Violations may result in legal proceedings and damages</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            Legal Action
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >Violations may result in legal proceedings and
+                            damages</span
+                          >
                         </div>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="flex items-start space-x-3">
-                        <i class="fas fa-handshake text-blue-400 mt-1 text-lg"></i>
+                        <i
+                          class="fas fa-handshake text-blue-400 mt-1 text-lg"
+                        ></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">Permission Required</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">Contact us for licensing or usage rights</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            Permission Required
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >Contact us for licensing or usage rights</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -331,29 +538,55 @@
           </div>
 
           <!-- Term 2: No Guarantees -->
-          <div id="no-guarantees" class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-right stagger-3">
+          <div
+            id="no-guarantees"
+            class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-right stagger-3"
+          >
             <div class="flex items-start mb-6">
-              <div class="terms-number icon-bounce">2</div>
+              <!-- <div class="terms-number icon-bounce">2</div> -->
               <div class="flex-1">
                 <div class="flex items-center mb-4">
-                  <div class="w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mr-4 icon-pulse">
-                    <i class="fas fa-exclamation-circle text-xl text-white"></i>
+                  <div
+                    class="w-10 h-10 lg:w-14 lg:h-14 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mr-4 icon-glow"
+                  >
+                    <i
+                      class="fas fa-exclamation-circle text-lg lg:xl text-white"
+                    ></i>
                   </div>
-                  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-white">No Guarantees</h2>
+                  <h2
+                    class="text-xl lg:text-4xl font-playfair font-bold text-white"
+                  >
+                    No Guarantees
+                  </h2>
                 </div>
                 <div class="space-y-6">
                   <p class="text-gray-300 leading-relaxed text-base lg:text-lg">
-                    While Grace Arabia strives for accuracy and completeness, we do not guarantee that all content on our website is complete, accurate, current, or error-free. Information may be subject to change without prior notice.
+                    While Grace Arabia strives for accuracy and completeness, we
+                    do not guarantee that all content on our website is
+                    complete, accurate, current, or error-free. Information may
+                    be subject to change without prior notice.
                   </p>
-                  
+
                   <div class="info-box rounded-lg p-4 lg:p-6">
                     <div class="flex items-center mb-3">
-                      <i class="fas fa-info-circle text-blue-400 mr-3 text-lg"></i>
-                      <h4 class="text-blue-400 font-semibold text-lg">Disclaimer of Warranties</h4>
+                      <i
+                        class="fas fa-info-circle text-blue-400 mr-3 text-lg"
+                      ></i>
+                      <h4 class="text-blue-400 font-semibold text-lg">
+                        Disclaimer of Warranties
+                      </h4>
                     </div>
-                    <ul class="text-blue-100 text-sm lg:text-base space-y-2 pl-4">
-                      <li>• Website content is provided "as is" without warranties of any kind</li>
-                      <li>• Project details, timelines, and service specifications may change</li>
+                    <ul
+                      class="text-blue-100 text-sm lg:text-base space-y-2 pl-4"
+                    >
+                      <li>
+                        • Website content is provided "as is" without warranties
+                        of any kind
+                      </li>
+                      <li>
+                        • Project details, timelines, and service specifications
+                        may change
+                      </li>
                       <li>• We disclaim all express and implied warranties</li>
                       <li>• Information accuracy is not guaranteed</li>
                     </ul>
@@ -361,19 +594,35 @@
 
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div class="feature-item text-center">
-                      <i class="fas fa-calendar-times text-red-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Project Changes</h4>
-                      <span class="text-gray-300 text-sm">Timelines and specifications may vary</span>
+                      <i
+                        class="fas fa-calendar-times text-red-400 text-2xl mb-3"
+                      ></i>
+                      <h4 class="text-white font-semibold mb-2">
+                        Project Changes
+                      </h4>
+                      <span class="text-gray-300 text-sm"
+                        >Timelines and specifications may vary</span
+                      >
                     </div>
                     <div class="feature-item text-center">
                       <i class="fas fa-tools text-orange-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Service Updates</h4>
-                      <span class="text-gray-300 text-sm">Services may be modified or discontinued</span>
+                      <h4 class="text-white font-semibold mb-2">
+                        Service Updates
+                      </h4>
+                      <span class="text-gray-300 text-sm"
+                        >Services may be modified or discontinued</span
+                      >
                     </div>
                     <div class="feature-item text-center">
-                      <i class="fas fa-sync-alt text-blue-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Content Updates</h4>
-                      <span class="text-gray-300 text-sm">Information updated without notice</span>
+                      <i
+                        class="fas fa-sync-alt text-blue-400 text-2xl mb-3"
+                      ></i>
+                      <h4 class="text-white font-semibold mb-2">
+                        Content Updates
+                      </h4>
+                      <span class="text-gray-300 text-sm"
+                        >Information updated without notice</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -382,56 +631,98 @@
           </div>
 
           <!-- Term 3: External Links -->
-          <div id="external-links" class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-left stagger-4">
+          <div
+            id="external-links"
+            class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-left stagger-4"
+          >
             <div class="flex items-start mb-6">
-              <div class="terms-number icon-glow">3</div>
+              <!-- <div class="terms-number icon-glow">3</div> -->
               <div class="flex-1">
                 <div class="flex items-center mb-4">
-                  <div class="w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4 icon-bounce">
-                    <i class="fas fa-external-link-alt text-xl text-white"></i>
+                  <div
+                    class="w-10 h-10 lg:w-14 lg:h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4 icon-glow"
+                  >
+                    <i
+                      class="fas fa-external-link-alt text-lg lg:xl text-white"
+                    ></i>
                   </div>
-                  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-white">External Links</h2>
+                  <h2
+                    class="text-xl sm:text-2xl lg:text-4xl font-playfair font-bold text-white"
+                  >
+                    External Links
+                  </h2>
                 </div>
                 <div class="space-y-6">
                   <p class="text-gray-300 leading-relaxed text-base lg:text-lg">
-                    Our website may contain links to third-party websites for your convenience and reference. Grace Arabia does not endorse, control, or assume responsibility for the content, privacy practices, or services of these external sites.
+                    Our website may contain links to third-party websites for
+                    your convenience and reference. Grace Arabia does not
+                    endorse, control, or assume responsibility for the content,
+                    privacy practices, or services of these external sites.
                   </p>
-                  
+
                   <div class="warning-box rounded-lg p-4 lg:p-6">
                     <div class="flex items-center mb-3">
-                      <i class="fas fa-shield-alt text-red-400 mr-3 text-lg"></i>
-                      <h4 class="text-red-400 font-semibold text-lg">Third-Party Disclaimer</h4>
+                      <i
+                        class="fas fa-shield-alt text-red-400 mr-3 text-lg"
+                      ></i>
+                      <h4 class="text-red-400 font-semibold text-lg">
+                        Third-Party Disclaimer
+                      </h4>
                     </div>
                     <p class="text-red-100 text-sm lg:text-base">
-                      Grace Arabia is not responsible for any damages, losses, or issues arising from your use of external websites. Use third-party sites at your own risk and review their terms and privacy policies.
+                      Grace Arabia is not responsible for any damages, losses,
+                      or issues arising from your use of external websites. Use
+                      third-party sites at your own risk and review their terms
+                      and privacy policies.
                     </p>
                   </div>
 
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="feature-item">
                       <div class="flex items-start space-x-3">
-                        <i class="fas fa-times-circle text-red-400 mt-1 text-lg"></i>
+                        <i
+                          class="fas fa-times-circle text-red-400 mt-1 text-lg"
+                        ></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">No Endorsement</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">Links do not imply endorsement of external content or services</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            No Endorsement
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >Links do not imply endorsement of external content
+                            or services</span
+                          >
                         </div>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="flex items-start space-x-3">
-                        <i class="fas fa-user-shield text-blue-400 mt-1 text-lg"></i>
+                        <i
+                          class="fas fa-user-shield text-blue-400 mt-1 text-lg"
+                        ></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">Privacy Protection</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">External sites have their own privacy policies and practices</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            Privacy Protection
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >External sites have their own privacy policies and
+                            practices</span
+                          >
                         </div>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="flex items-start space-x-3">
-                        <i class="fas fa-exclamation-triangle text-yellow-400 mt-1 text-lg"></i>
+                        <i
+                          class="fas fa-exclamation-triangle text-yellow-400 mt-1 text-lg"
+                        ></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">User Responsibility</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">Users must exercise caution when visiting external websites</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            User Responsibility
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >Users must exercise caution when visiting external
+                            websites</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -439,8 +730,13 @@
                       <div class="flex items-start space-x-3">
                         <i class="fas fa-link text-purple-400 mt-1 text-lg"></i>
                         <div>
-                          <h4 class="text-white font-semibold mb-2">Link Availability</h4>
-                          <span class="text-gray-300 text-sm lg:text-base">External links may become unavailable without notice</span>
+                          <h4 class="text-white font-semibold mb-2">
+                            Link Availability
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base"
+                            >External links may become unavailable without
+                            notice</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -451,51 +747,108 @@
           </div>
 
           <!-- Term 4: Limitation of Liability -->
-          <div id="liability" class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-right stagger-5">
+          <div
+            id="liability"
+            class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-right stagger-5"
+          >
             <div class="flex items-start mb-6">
-              <div class="terms-number icon-pulse">4</div>
+              <!-- <div class="terms-number icon-pulse">4</div> -->
               <div class="flex-1">
                 <div class="flex items-center mb-4">
-                  <div class="w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mr-4 icon-glow">
-                    <i class="fas fa-balance-scale text-xl text-white"></i>
+                  <div
+                    class="w-11 h-9 lg:w-14 lg:h-14 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mr-4 icon-glow"
+                  >
+                    <i
+                      class="fas fa-balance-scale text-lg lg:text-xl text-white"
+                    ></i>
                   </div>
-                  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-white">Limitation of Liability</h2>
+                  <h2
+                    class="text-xl sm:text-2xl lg:text-4xl font-playfair font-bold text-white"
+                  >
+                    Limitation of Liability
+                  </h2>
                 </div>
                 <div class="space-y-6">
                   <p class="text-gray-300 leading-relaxed text-base lg:text-lg">
-                    Grace Arabia, its directors, employees, and affiliates shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use or inability to use this website.
+                    Grace Arabia, its directors, employees, and affiliates shall
+                    not be liable for any direct, indirect, incidental,
+                    consequential, or punitive damages arising from your use or
+                    inability to use this website.
                   </p>
-                  
+
                   <div class="success-box rounded-lg p-4 lg:p-6">
                     <div class="flex items-center mb-3">
-                      <i class="fas fa-info-circle text-green-400 mr-3 text-lg"></i>
-                      <h4 class="text-green-400 font-semibold text-lg">Liability Scope</h4>
+                      <i
+                        class="fas fa-info-circle text-green-400 mr-3 text-lg"
+                      ></i>
+                      <h4 class="text-green-400 font-semibold text-lg">
+                        Liability Scope
+                      </h4>
                     </div>
                     <p class="text-green-100 text-sm lg:text-base">
-                      This limitation applies regardless of the cause of action, whether based on contract, tort, negligence, or any other legal theory, even if Grace Arabia has been advised of the possibility of such damages.
+                      This limitation applies regardless of the cause of action,
+                      whether based on contract, tort, negligence, or any other
+                      legal theory, even if Grace Arabia has been advised of the
+                      possibility of such damages.
                     </p>
                   </div>
 
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div class="feature-item text-center">
-                      <i class="fas fa-ban text-red-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Direct Damages</h4>
-                      <span class="text-gray-300 text-sm">No liability for direct losses</span>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="feature-item">
+                      <div class="flex items-start space-x-3">
+                        <i class="fas fa-ban text-red-400 mt-1 text-lg"></i>
+                        <div>
+                          <h4 class="text-white font-semibold mb-2">
+                            Direct Damages
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base">
+                            No liability for direct losses
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="feature-item text-center">
-                      <i class="fas fa-times-circle text-orange-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Indirect Damages</h4>
-                      <span class="text-gray-300 text-sm">No liability for consequential losses</span>
+                    <div class="feature-item">
+                      <div class="flex items-start space-x-3">
+                        <i
+                          class="fas fa-times-circle text-orange-400 mt-1 text-lg"
+                        ></i>
+                        <div>
+                          <h4 class="text-white font-semibold mb-2">
+                            Indirect Damages
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base">
+                            No liability for consequential losses
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="feature-item text-center">
-                      <i class="fas fa-dollar-sign text-yellow-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Financial Loss</h4>
-                      <span class="text-gray-300 text-sm">No liability for monetary damages</span>
+                    <div class="feature-item">
+                      <div class="flex items-start space-x-3">
+                        <i
+                          class="fas fa-dollar-sign text-yellow-400 mt-1 text-lg"
+                        ></i>
+                        <div>
+                          <h4 class="text-white font-semibold mb-2">
+                            Financial Loss
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base">
+                            No liability for monetary damages
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="feature-item text-center">
-                      <i class="fas fa-clock text-blue-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Business Loss</h4>
-                      <span class="text-gray-300 text-sm">No liability for business interruption</span>
+                    <div class="feature-item">
+                      <div class="flex items-start space-x-3">
+                        <i class="fas fa-clock text-blue-400 mt-1 text-lg"></i>
+                        <div>
+                          <h4 class="text-white font-semibold mb-2">
+                            Business Loss
+                          </h4>
+                          <span class="text-gray-300 text-sm lg:text-base">
+                            No liability for business interruption
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -504,46 +857,78 @@
           </div>
 
           <!-- Term 5: Changes to Terms -->
-          <div class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-left stagger-6">
+          <div
+            class="terms-section rounded-xl p-6 lg:p-8 mb-8 card-hover-effect slide-in-left stagger-6"
+          >
             <div class="flex items-start mb-6">
-              <div class="terms-number icon-bounce">5</div>
+              <!-- <div class="terms-number icon-bounce">5</div> -->
               <div class="flex-1">
                 <div class="flex items-center mb-4">
-                  <div class="w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mr-4 icon-pulse">
-                    <i class="fas fa-edit text-xl text-white"></i>
+                  <div
+                    class="w-11 h-9 lg:w-14 lg:h-14 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mr-4 icon-pulse"
+                  >
+                    <i class="fas fa-edit text-sm sm:text-xl text-white"></i>
                   </div>
-                  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-white">Changes to These Terms</h2>
+                  <h2
+                    class="text-lg sm:text-2xl lg:text-4xl font-playfair font-bold text-white"
+                  >
+                    Changes to These Terms
+                  </h2>
                 </div>
                 <div class="space-y-6">
                   <p class="text-gray-300 leading-relaxed text-base lg:text-lg">
-                    Grace Arabia reserves the right to modify, update, or replace these terms and conditions at any time without prior notice. Changes will be effective immediately upon posting on this website.
+                    Grace Arabia reserves the right to modify, update, or
+                    replace these terms and conditions at any time without prior
+                    notice. Changes will be effective immediately upon posting
+                    on this website.
                   </p>
-                  
+
                   <div class="info-box rounded-lg p-4 lg:p-6">
                     <div class="flex items-center mb-3">
                       <i class="fas fa-bell text-blue-400 mr-3 text-lg"></i>
-                      <h4 class="text-blue-400 font-semibold text-lg">User Responsibility</h4>
+                      <h4 class="text-blue-400 font-semibold text-lg">
+                        User Responsibility
+                      </h4>
                     </div>
                     <p class="text-blue-100 text-sm lg:text-base">
-                      It is your responsibility to review these terms periodically for updates. Continued use of the website following any changes constitutes acceptance of the new terms.
+                      It is your responsibility to review these terms
+                      periodically for updates. Continued use of the website
+                      following any changes constitutes acceptance of the new
+                      terms.
                     </p>
                   </div>
 
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div class="feature-item text-center">
-                      <i class="fas fa-sync-alt text-green-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Regular Updates</h4>
-                      <span class="text-gray-300 text-sm">Terms updated to reflect business changes</span>
+                      <i
+                        class="fas fa-sync-alt text-green-400 text-2xl mb-3"
+                      ></i>
+                      <h4 class="text-white font-semibold mb-2">
+                        Regular Updates
+                      </h4>
+                      <span class="text-gray-300 text-sm"
+                        >Terms updated to reflect business changes</span
+                      >
                     </div>
                     <div class="feature-item text-center">
-                      <i class="fas fa-calendar-check text-blue-400 text-2xl mb-3"></i>
-                      <h4 class="text-white font-semibold mb-2">Effective Date</h4>
-                      <span class="text-gray-300 text-sm">Changes effective upon posting</span>
+                      <i
+                        class="fas fa-calendar-check text-blue-400 text-2xl mb-3"
+                      ></i>
+                      <h4 class="text-white font-semibold mb-2">
+                        Effective Date
+                      </h4>
+                      <span class="text-gray-300 text-sm"
+                        >Changes effective upon posting</span
+                      >
                     </div>
                     <div class="feature-item text-center">
-                      <i class="fas fa-check-circle text-orange-400 text-2xl mb-3"></i>
+                      <i
+                        class="fas fa-check-circle text-orange-400 text-2xl mb-3"
+                      ></i>
                       <h4 class="text-white font-semibold mb-2">Acceptance</h4>
-                      <span class="text-gray-300 text-sm">Continued use implies acceptance</span>
+                      <span class="text-gray-300 text-sm"
+                        >Continued use implies acceptance</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -552,161 +937,241 @@
           </div>
 
           <!-- Contact Information -->
-          <div class="terms-section rounded-xl p-6 lg:p-8 card-hover-effect slide-in-right stagger-7">
+          <div
+            class="terms-section rounded-xl p-6 lg:p-8 card-hover-effect slide-in-right stagger-7"
+          >
             <div class="flex items-center mb-6">
-              <div class="w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mr-4 icon-glow">
-                <i class="fas fa-phone-alt text-xl text-white"></i>
+              <div
+                class="w-10 h-9 lg:w-14 lg:h-14 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mr-4 icon-glow"
+              >
+                <i class="fas fa-phone-alt text-sm sm:text-xl text-white"></i>
               </div>
-              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-white">Questions About These Terms?</h2>
+              <h2
+                class="text-lg sm:text-2xl lg:text-4xl font-playfair font-bold text-white"
+              >
+                Questions About These Terms?
+              </h2>
             </div>
             <p class="text-gray-300 leading-relaxed mb-8 text-base lg:text-lg">
-              If you have any questions, concerns, or need clarification about these terms and conditions, our legal team is available to assist you. Contact us using the methods below.
+              If you have any questions, concerns, or need clarification about
+              these terms and conditions, our legal team is available to assist
+              you. Contact us using the methods below.
             </p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div class="contact-card rounded-lg p-6">
-                <h4 class="text-lg font-bold text-white mb-4 flex items-center">
+                <h4 class="text-[16px] font-bold text-white mb-4 flex items-center">
                   <i class="fas fa-building text-orange-400 mr-2"></i>
                   Legal Department
                 </h4>
                 <div class="space-y-2 text-gray-300 text-sm lg:text-base">
-                  <p class="font-semibold text-white">Grace Arabia Legal Team</p>
+                  <p class="font-semibold text-white">
+                    Grace Arabia Legal Team
+                  </p>
                   <p>Manama, Kingdom of Bahrain</p>
-                  <p><i class="fas fa-globe mr-2 text-orange-400"></i>Operating across India, Bahrain & Saudi Arabia</p>
-                  <p><i class="fas fa-clock mr-2 text-orange-400"></i>Business Hours: 9:00 AM - 6:00 PM (GST)</p>
+                  <p>
+                    <i class="fas fa-globe mr-2 text-orange-400"></i>Operating
+                    across India, Bahrain & Saudi Arabia
+                  </p>
+                  <p>
+                    <i class="fas fa-clock mr-2 text-orange-400"></i>Business
+                    Hours: 9:00 AM - 6:00 PM (GST)
+                  </p>
                 </div>
               </div>
               <div class="contact-card rounded-lg p-6">
-                <h4 class="text-lg font-bold text-white mb-4 flex items-center">
-                  <i class="fas fa-envelope text-orange-400 mr-2"></i>
-                  Get Legal Support
-                </h4>
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-envelope text-lg text-orange-400 mr-2"></i>
+                  <h4
+                    class="text-[18px] font-bold text-white flex items-center"
+                  >
+                    Get Legal Support
+                  </h4>
+                </div>
                 <div class="space-y-4">
-                  <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                  <div class="flex items-center space-x-3 my-6">
+                    <div
+                      class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center"
+                    >
                       <i class="fas fa-envelope text-black"></i>
                     </div>
                     <div>
-                      <p class="text-white font-semibold text-sm">Legal Inquiries</p>
-                      <a href="mailto:legal@gracearabia.com" class="text-orange-400 hover:underline text-sm">legal@gracearabia.com</a>
+                      <p class="text-white font-semibold text-sm">
+                        Legal Inquiries
+                      </p>
+                      <a
+                        href="mailto:legal@gracearabia.com"
+                        class="text-orange-400 hover:underline text-xs"
+                        >legal@gracearabia.com</a
+                      >
                     </div>
                   </div>
-                  <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                  <div class="flex items-center space-x-3 my-6">
+                    <div
+                      class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center"
+                    >
                       <i class="fab fa-whatsapp text-black"></i>
                     </div>
                     <div>
-                      <p class="text-white font-semibold text-sm">WhatsApp Support</p>
-                      <a href="https://wa.me/+966591513355" class="text-orange-400 hover:underline text-sm" target="_blank">+966 59 151 3355</a>
+                      <p class="text-white font-semibold text-sm">
+                        WhatsApp Support
+                      </p>
+                      <a
+                        href="https://wa.me/+966591513355"
+                        class="text-orange-400 hover:underline text-sm"
+                        target="_blank"
+                        >+966 59 151 3355</a
+                      >
                     </div>
                   </div>
-                  <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                  <div class="flex items-center space-x-3 my-6">
+                    <div
+                      class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center"
+                    >
                       <i class="fas fa-clock text-white"></i>
                     </div>
                     <div>
-                      <p class="text-white font-semibold text-sm">Response Time</p>
+                      <p class="text-white font-semibold text-sm">
+                        Response Time
+                      </p>
                       <p class="text-gray-300 text-sm">Within 24-48 hours</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <!-- Legal notice -->
-            <div class="mt-8 bg-gradient-to-r from-indigo-900 to-purple-900 bg-opacity-30 border border-indigo-500 border-opacity-40 rounded-lg p-4 lg:p-6">
+            <div
+              class="mt-8 bg-gradient-to-r from-indigo-900 to-purple-900 bg-opacity-30 border border-indigo-500 border-opacity-40 rounded-lg p-4 lg:p-6"
+            >
               <div class="flex items-start space-x-3">
-                <i class="fas fa-balance-scale text-indigo-400 mt-1 text-lg flex-shrink-0"></i>
+                <i
+                  class="fas fa-balance-scale text-indigo-400 mt-1 text-lg flex-shrink-0"
+                ></i>
                 <div>
-                  <h5 class="text-indigo-400 font-semibold mb-2">Governing Law</h5>
+                  <h5 class="text-indigo-400 font-semibold mb-2">
+                    Governing Law
+                  </h5>
                   <p class="text-indigo-100 text-sm lg:text-base">
-                    These terms and conditions are governed by and construed in accordance with the laws of the Kingdom of Bahrain. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of Bahraini courts.
+                    These terms and conditions are governed by and construed in
+                    accordance with the laws of the Kingdom of Bahrain. Any
+                    disputes arising from these terms shall be subject to the
+                    exclusive jurisdiction of Bahraini courts.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-    
-        <!-- Footer -->
-        <div class="bg-dark-bg pt-16">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <div data-aos="fade-right">
-                        <a href="#" class="flex items-center space-x-2 mb-1">
-                            <img src="./assets/images/logo.png" alt="Grace Arabia Logo" class="h-16" />
-                        </a>
-                        <p class="text-gray-400 mb-4">
-                            <i class="fas fa-map-marker-alt text-light-text mr-2"></i>
-                            <span class="text-[13px]">Corporate Office: Bahrain</span>
-                            <span class="flex items-center space-x-2">
-                                <i class="fas fa-globe-americas text-light-text"></i>
-                                <span class="text-[13px]">Regional Presence: India | Bahrain | Saudi Arabia</span>
-                            </span>
-                        </p>
-                        <div class="text-gray-400 mb-10">
-                            <!-- <i class="fas fa-phone text-accent-orange mr-2"></i>+123 888
+
+    <!-- Footer -->
+    <div class="bg-dark-bg pt-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div data-aos="fade-right">
+            <a href="#" class="flex items-center space-x-2 mb-1">
+              <img
+                src="./assets/images/logo.png"
+                alt="Grace Arabia Logo"
+                class="h-16"
+              />
+            </a>
+            <p class="text-gray-400 mb-4">
+              <i class="fas fa-map-marker-alt text-light-text mr-2"></i>
+              <span class="text-[13px]">Corporate Office: Bahrain</span>
+              <span class="flex items-center space-x-2">
+                <i class="fas fa-globe-americas text-light-text"></i>
+                <span class="text-[13px]"
+                  >Regional Presence: India | Bahrain | Saudi Arabia</span
+                >
+              </span>
+            </p>
+            <div class="text-gray-400 mb-10">
+              <!-- <i class="fas fa-phone text-accent-orange mr-2"></i>+123 888
                         9999 -->
-                            <i class="fab fa-whatsapp text-accent-orange mr-2" style="color: orange;"></i>
-                            <a href="https://wa.me/+966591513355" target="_blank">+966 59 151 3355</a>
-    
-                        </div>
-                    </div>
-    
-                    <div data-aos="fade-up" data-aos-delay="200">
-                        <h4 class="text-xl font-bold text-light-text mb-6">Menu</h4>
-                        <ul class="space-y-2 footer-nav">
-                            <li>
-                                <a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">About
-                                    Us</a>
-                            </li>
-                            <li>
-                                <a href="index.html#our-services"
-                                    class="text-gray-400 hover:text-white transition-colors">Our Services</a>
-                            </li>
-                            <li>
-                                <a href="index.html#contact"
-                                    class="text-gray-400 hover:text-white transition-colors">Contact</a>
-                            </li>
-                            <li>
-                                <a href="terms.html"
-                                    class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div data-aos="fade-up" data-aos-delay="300">
-                        <h4 class="text-xl font-bold text-light-text mb-6">
-                            Quick Links
-                        </h4>
-                        <ul class="space-y-2 footer-nav">
-                            <!-- <li>
+              <i
+                class="fab fa-whatsapp text-accent-orange mr-2"
+                style="color: orange"
+              ></i>
+              <a href="https://wa.me/+966591513355" target="_blank"
+                >+966 59 151 3355</a
+              >
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="200">
+            <h4 class="text-xl font-bold text-light-text mb-6">Menu</h4>
+            <ul class="space-y-2 footer-nav">
+              <li>
+                <a
+                  href="index.html#about"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#our-services"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#contact"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="terms.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h4 class="text-xl font-bold text-light-text mb-6">Quick Links</h4>
+            <ul class="space-y-2 footer-nav">
+              <!-- <li>
                           <a
                             href="#"
                             class="text-gray-400 hover:text-white transition-colors"
                             >Pricing</a
                           >
                         </li> -->
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition-colors">Our Blog</a>
-                            </li>
-                            <li>
-                                <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
-                                    Policy</a>
-                            </li>
-                            <li>
-                                <a href="#cookies" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div data-aos="fade-left" data-aos-delay="400">
-                        <h4 class="text-xl font-bold text-light-text mb-6">
-                            Social media
-                        </h4>
-                        <!-- <div class="flex items-center space-x-4 mt-6">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Our Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#cookies"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div data-aos="fade-left" data-aos-delay="400">
+            <h4 class="text-xl font-bold text-light-text mb-6">Social media</h4>
+            <!-- <div class="flex items-center space-x-4 mt-6">
                         <a
                           href="#"
                           class="social-icon-dark hover:text-white transition-colors"
@@ -728,30 +1193,55 @@
                           ><i class="fab fa-pinterest-p text-2xl"></i
                         ></a>
                       </div> -->
-                    </div>
-                </div>
-            </div>
-            <div>
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                    </g>
-                </svg>
-            </div>
-            <div class="bg-white pt-2 md:pt-0 pb-2 text-[10px] md:text-[14px] text-center text-gray-500">
-                <p>Copyright © Grace Arabia. All Right Reserved</p>
-            </div>
+          </div>
         </div>
-    
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="./assets/js/construction.js"></script>
-</body>
+      </div>
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <div
+        class="bg-white pt-2 md:pt-0 pb-2 text-[10px] md:text-[14px] text-center text-gray-500"
+      >
+        <p>Copyright © Grace Arabia. All Right Reserved</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/construction.js"></script>
+  </body>
 </html>
