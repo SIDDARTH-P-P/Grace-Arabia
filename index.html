@@ -145,7 +145,7 @@
                   class="w-12 h-12 flex items-center justify-center bg-accent-orange text-dark-bg rounded-full"
                 >
                   <!-- <i class="fas fa-phone-alt"></i> -->
-                  <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-whatsapp" style="font-size: 25px; margin-left: 30px;"></i>
                 </div>
                 <div>
                   <div class="text-sm text-gray-400">Whatsapp</div>
@@ -488,100 +488,233 @@
             <div class="circle shape-7"></div>
             <div class="circle shape-8"></div>
           </div>
-          <div class="container mx-auto px-4">
-            <div
-              class="flex flex-col lg:flex-row items-center justify-between mb-12"
-            >
-              <h2
-                class="text-[26px] sm:text-3xl font-bold text-light-text text-center lg:text-left mt-8"
-                data-aos="zoom-in"
-              >
-                Our Services
-              </h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 class="section-title">Our Services</h2>
+          <div class="services-grid">
               <!-- Service Card 1 -->
               <a
-                href="construction.html"
-                class="p-6 bg-dark-header-bg rounded-xl shadow-xl text-center cursor-pointer service-card-link group"
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-service-id="construction"
-                data-service-title="Construction & Maintenance"
-                data-service-icon="fas fa-hard-hat"
-                data-service-description="We engineer durable and efficient structures that meet global standards and local requirements. Our construction division is backed by expert architects, civil engineers, and project managers who ensure safety, cost-efficiency, and timely delivery. Post-construction, our dedicated maintenance unit handles all ongoing needs to maximize building longevity and performance. Our Specialties Include: Civil & Structural Works (RCC, Steel Structures, PEBs), Residential Villas, Commercial Complexes, and Industrial Units, Interior Fit-outs, Renovation & Expansion Projects, MEP Services: Electrical, Plumbing, HVAC, Waterproofing, Tiling, Painting & General Repairs, AMC (Annual Maintenance Contracts) & On-call Services. Key Advantage: A fully integrated construction and maintenance solution — no handover gaps, full lifecycle support."
+                  href="construction.html"
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-service-id="construction"
               >
-                <div
-                  class="card-service-icon mx-auto group-hover:bg-accent-orange group-hover:text-black transition-colors duration-300"
-                >
-                  <i class="fas fa-hard-hat"></i>
-                </div>
-                <h3 class="text-xl font-bold text-light-text mb-1">
-                  Construction & Maintenance
-                </h3>
+                  <div class="card-service-icon">
+                      <i class="fas fa-hard-hat"></i>
+                  </div>
+                  <h3 class="service-title">Construction & Maintenance</h3>
+                  <p class="service-description">
+                      We engineer durable and efficient structures that meet global standards. Our construction division handles civil works, residential villas, commercial complexes, MEP services, and complete maintenance solutions.
+                  </p>
               </a>
+
               <!-- Service Card 2 -->
               <a
-                href="trading.html"
-                class="p-6 bg-dark-header-bg rounded-xl shadow-xl text-center cursor-pointer service-card-link group"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-service-id="trading"
-                data-service-title="Trading Division"
-                data-service-icon="fas fa-shopping-cart"
-                data-service-description="We source and supply a wide range of quality materials, equipment, and products, ensuring consistency, affordability, and timely delivery."
+                  href="trading.html"
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-service-id="trading"
               >
-                <div
-                  class="card-service-icon mx-auto group-hover:bg-accent-orange group-hover:text-black transition-colors duration-300"
-                >
-                  <i class="fas fa-shopping-cart"></i>
-                </div>
-                <h3 class="text-xl font-bold text-light-text mb-1">
-                  Trading Division
-                </h3>
+                  <div class="card-service-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <h3 class="service-title">Trading Division</h3>
+                  <p class="service-description">
+                      We source and supply a wide range of quality materials, equipment, and products, ensuring consistency, affordability, and timely delivery for all your project needs.
+                  </p>
               </a>
+
               <!-- Service Card 3 -->
               <a
-                href="digital-marketing.html"
-                class="p-6 bg-dark-header-bg rounded-xl shadow-xl text-center cursor-pointer service-card-link group"
-                data-aos="fade-up"
-                data-aos-delay="400"
-                data-service-id="digital-marketing"
-                data-service-title="Digital Marketing Agency"
-                data-service-icon="fas fa-desktop"
-                data-service-description="Take your brand to the next level. Our creative digital team offers web design, branding, social media management, and full-scale digital campaigns tailored to your goals."
+                  href="digital-marketing.html"
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-service-id="digital-marketing"
               >
-                <div
-                  class="card-service-icon mx-auto group-hover:bg-accent-orange group-hover:text-black transition-colors duration-300"
-                >
-                  <i class="fas fa-desktop"></i>
-                </div>
-                <h3 class="text-xl font-bold text-light-text mb-1">
-                  Digital Marketing Agency
-                </h3>
+                  <div class="card-service-icon">
+                      <i class="fas fa-desktop"></i>
+                  </div>
+                  <h3 class="service-title">Digital Marketing Agency</h3>
+                  <p class="service-description">
+                      Take your brand to the next level. Our creative digital team offers web design, branding, social media management, and full-scale digital campaigns tailored to your goals.
+                  </p>
               </a>
+
               <!-- Service Card 4 -->
               <a
-                href="interior-design.html"
-                class="p-6 bg-dark-header-bg rounded-xl shadow-xl text-center cursor-pointer service-card-link group"
-                data-aos="fade-up"
-                data-aos-delay="500"
-                data-service-id="interior-designing"
-                data-service-title="Interior Designing & Manufacturing"
-                data-service-icon="fas fa-couch"
-                data-service-description="We design, manufacture, and install elegant interiors that reflect style and functionality. From homes to offices and retail, our custom-made furniture and interiors bring your vision to life."
+                  href="interior-design.html"
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-service-id="interior-designing"
               >
-                <div
-                  class="card-service-icon mx-auto group-hover:bg-accent-orange group-hover:text-black transition-colors duration-300"
-                >
-                  <i class="fas fa-couch"></i>
-                </div>
-                <h3 class="text-xl font-bold text-light-text mb-1">
-                  Interior Designing & Manufacturing
-                </h3>
+                  <div class="card-service-icon">
+                      <i class="fas fa-couch"></i>
+                  </div>
+                  <h3 class="service-title">Interior Designing & Manufacturing</h3>
+                  <p class="service-description">
+                      We design, manufacture, and install elegant interiors that reflect style and functionality. Custom-made furniture and interiors for homes, offices, and retail spaces.
+                  </p>
               </a>
-            </div>
+          </div>
+      </section>
+
+      <!-- Security & Automation Services Section -->
+      <section class="security-services">
+        <div class="hero-shapes">
+          <div class="circle shape-2"></div>
+          <div class="circle shape-3"></div>
+          <div class="circle shape-4"></div>
+          <div class="circle shape-5"></div>
+          <div class="circle shape-6"></div>
+          <div class="circle shape-7"></div>
+          <div class="circle shape-8"></div>
+        </div>
+          <h3 class="subsection-title">Security & Automation Solutions</h3>
+          <div class="services-grid">
+              <!-- CCTV Installation -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-service-id="cctv-installation"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-video"></i>
+                  </div>
+                  <h3 class="service-title">CCTV Installation</h3>
+              </div>
+
+              <!-- Gate, Roof & Shutter Automation -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-service-id="automation"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-cog"></i>
+                  </div>
+                  <h3 class="service-title">Gate, Roof & Shutter Automation</h3>
+              </div>
+
+              <!-- Home Automation -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-service-id="home-automation"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-home"></i>
+                  </div>
+                  <h3 class="service-title">Home Automation</h3>
+              </div>
+
+              <!-- Home Lift -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-service-id="home-lift"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-elevator"></i>
+                  </div>
+                  <h3 class="service-title">Home Lift</h3>
+              </div>
+
+              <!-- Home Theatre -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-service-id="home-theatre"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-film"></i>
+                  </div>
+                  <h3 class="service-title">Home Theatre</h3>
+              </div>
+
+              <!-- Burglar Alarm System -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-service-id="burglar-alarm"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3 class="service-title">Burglar Alarm System</h3>
+              </div>
+
+              <!-- Video Intercom System -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                  data-service-id="video-intercom"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-phone-square-alt"></i>
+                  </div>
+                  <h3 class="service-title">Video Intercom System</h3>
+              </div>
+
+              <!-- Biometric System -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="800"
+                  data-service-id="biometric-system"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-fingerprint"></i>
+                  </div>
+                  <h3 class="service-title">Biometric System</h3>
+              </div>
+
+              <!-- Networking -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                  data-service-id="networking"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-network-wired"></i>
+                  </div>
+                  <h3 class="service-title">Networking</h3>
+              </div>
+
+              <!-- Lightning Arrester with Surge Protector -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
+                  data-service-id="lightning-protection"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-bolt"></i>
+                  </div>
+                  <h3 class="service-title">Lightning Arrester & Surge Protection</h3>
+              </div>
+
+              <!-- Solar System Installation -->
+              <div
+                  class="service-card-link group"
+                  data-aos="fade-up"
+                  data-aos-delay="1100"
+                  data-service-id="solar-installation"
+              >
+                  <div class="card-service-icon">
+                      <i class="fas fa-solar-panel"></i>
+                  </div>
+                  <h3 class="service-title">Solar System Installation</h3>
+              </div>
           </div>
         </section>
         <!-- Service Detail Page -->
@@ -696,7 +829,7 @@
               <div class="text-gray-400 mb-10">
                 <!-- <i class="fas fa-phone text-accent-orange mr-2"></i>+123 888
                 9999 -->
-                  <i class="fab fa-whatsapp text-accent-orange mr-2" style="color: orange;"></i>
+                  <i class="fab  fa-whatsapp text-accent-orange mr-2" style="color: orange;"></i>
                     <a href="https://wa.me/+966591513355" target="_blank">+966 59 151 3355</a>
 
               </div>
@@ -728,7 +861,7 @@
                 </li>
                 <li>
                   <a
-                    href="terms&condition.html"
+                    href="terms.html"
                     class="text-gray-400 hover:text-white transition-colors"
                     >Terms & Conditions</a
                   >
@@ -757,7 +890,7 @@
                 </li>
                 <li>
                   <a
-                    href="#privacy"
+                    href="privacy.html"
                     class="text-gray-400 hover:text-white transition-colors"
                     >Privacy Policy</a
                   >

@@ -158,86 +158,113 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-    // document.addEventListener('DOMContentLoaded', () => {
-    //   const mobileToggle = document.getElementById('ga-mobile-toggle');
-    //   const mobileNav = document.getElementById('ga-mobile-nav');
-    //   const menuIcon = document.getElementById('ga-menu-icon');
-    //   const closeIcon = document.getElementById('ga-close-icon');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const mobileToggle = document.getElementById('ga-mobile-toggle');
+//   const mobileNav = document.getElementById('ga-mobile-nav');
+//   const menuIcon = document.getElementById('ga-menu-icon');
+//   const closeIcon = document.getElementById('ga-close-icon');
 
-    //   const divisionBtn = document.getElementById('ga-mobile-division-btn');
-    //   const divisionContent = document.getElementById('ga-mobile-division');
-    //   const divisionArrow = document.getElementById('ga-mobile-division-arrow');
+//   const divisionBtn = document.getElementById('ga-mobile-division-btn');
+//   const divisionContent = document.getElementById('ga-mobile-division');
+//   const divisionArrow = document.getElementById('ga-mobile-division-arrow');
 
-    //   // mobile toggle
-    //   mobileToggle.addEventListener('click', () => {
-    //     mobileNav.classList.toggle('hidden');
-    //     menuIcon.classList.toggle('hidden');
-    //     closeIcon.classList.toggle('hidden');
-    //     const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
-    //     mobileToggle.setAttribute('aria-expanded', (!expanded).toString());
-    //   });
+//   // mobile toggle
+//   mobileToggle.addEventListener('click', () => {
+//     mobileNav.classList.toggle('hidden');
+//     menuIcon.classList.toggle('hidden');
+//     closeIcon.classList.toggle('hidden');
+//     const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+//     mobileToggle.setAttribute('aria-expanded', (!expanded).toString());
+//   });
 
-    //   // mobile division collapse
-    //   divisionBtn.addEventListener('click', () => {
-    //     divisionContent.classList.toggle('hidden');
-    //     const open = !divisionContent.classList.contains('hidden');
-    //     divisionBtn.setAttribute('aria-expanded', open.toString());
-    //     divisionArrow.style.transform = open ? 'rotate(180deg)' : 'rotate(0deg)';
-    //   });
+//   // mobile division collapse
+//   divisionBtn.addEventListener('click', () => {
+//     divisionContent.classList.toggle('hidden');
+//     const open = !divisionContent.classList.contains('hidden');
+//     divisionBtn.setAttribute('aria-expanded', open.toString());
+//     divisionArrow.style.transform = open ? 'rotate(180deg)' : 'rotate(0deg)';
+//   });
 
-    //   // optional: close mobile menu if click outside (small helper)
-    //   document.addEventListener('click', (e) => {
-    //     if (!mobileNav.contains(e.target) && !mobileToggle.contains(e.target) && !mobileNav.classList.contains('hidden')) {
-    //       // close
-    //       mobileNav.classList.add('hidden');
-    //       menuIcon.classList.remove('hidden');
-    //       closeIcon.classList.add('hidden');
-    //       mobileToggle.setAttribute('aria-expanded','false');
-    //     }
-    //   });
-    // });
+//   // optional: close mobile menu if click outside (small helper)
+//   document.addEventListener('click', (e) => {
+//     if (!mobileNav.contains(e.target) && !mobileToggle.contains(e.target) && !mobileNav.classList.contains('hidden')) {
+//       // close
+//       mobileNav.classList.add('hidden');
+//       menuIcon.classList.remove('hidden');
+//       closeIcon.classList.add('hidden');
+//       mobileToggle.setAttribute('aria-expanded','false');
+//     }
+//   });
+// });
 
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
+  const form = e.target;
+  const formData = new FormData(form);
+  const messageBox = document.getElementById("formMessage");
+  const submitBtn = document.getElementById("submitBtn");
+  const btnText = document.getElementById("btnText");
+  const btnSpinner = document.getElementById("btnSpinner");
 
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-    
-      const form = e.target;
-      const formData = new FormData(form);
-      const messageBox = document.getElementById("formMessage");
-      const submitBtn = document.getElementById("submitBtn");
-      const btnText = document.getElementById("btnText");
-      const btnSpinner = document.getElementById("btnSpinner");
-    
-      // Show loader
-      btnText.textContent = "Sending...";
-      btnSpinner.classList.remove("hidden");
-      submitBtn.disabled = true;
-    
-      fetch("http://54.242.3.123:8000/sendmail.php", {
-          method: "POST",
-          body: formData
-      })
-      .then(response => response.text())
-      .then(result => {
-          messageBox.textContent = result;
-          messageBox.className = "text-green-600 text-sm mt-4 md:col-span-2";
-    
-          form.reset(); // Clear form
-    
-          // Reset UI after 2 seconds
-          setTimeout(() => {
-              messageBox.textContent = "";
-          }, 2000);
-      })
-      .catch(error => {
-          messageBox.textContent = "Something went wrong. Please try again.";
-          messageBox.className = "text-red-600 text-sm mt-4 md:col-span-2";
-      })
-      .finally(() => {
-          // Hide loader and re-enable button
-          btnText.textContent = "SEND NOW";
-          btnSpinner.classList.add("hidden");
-          submitBtn.disabled = false;
-      });
+  // Show loader
+  btnText.textContent = "Sending...";
+  btnSpinner.classList.remove("hidden");
+  submitBtn.disabled = true;
+
+  fetch("send-mail.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((result) => {
+      messageBox.textContent = result;
+      messageBox.className = "text-green-600 text-sm mt-4 md:col-span-2";
+
+      form.reset(); // Clear form
+
+      // Reset UI after 2 seconds
+      setTimeout(() => {
+        messageBox.textContent = "";
+      }, 2000);
+    })
+    .catch((error) => {
+      messageBox.textContent = "Something went wrong. Please try again.";
+      messageBox.className = "text-red-600 text-sm mt-4 md:col-span-2";
+    })
+    .finally(() => {
+      // Hide loader and re-enable button
+      btnText.textContent = "SEND NOW";
+      btnSpinner.classList.add("hidden");
+      submitBtn.disabled = false;
     });
+});
+
+// Add click handlers for service cards
+document.querySelectorAll(".service-card-link").forEach((card) => {
+  card.addEventListener("click", function (e) {
+    // Add click animation
+    this.style.transform = "translateY(-2px) scale(0.98)";
+    setTimeout(() => {
+      this.style.transform = "";
+    }, 150);
+  });
+});
+
+// Add intersection observer for staggered animations
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationDelay = `${
+          entry.target.dataset.delay || 0
+        }ms`;
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+document.querySelectorAll(".service-card-link").forEach((card) => {
+  observer.observe(card);
+});
